@@ -1,0 +1,35 @@
+Do you want each new user that signs up to your social network to automatically receive a message from you? You will be able to send new users a welcome message, saying to them if they needed any help to contact you, etc. If you want to add this to your SocialEngine, follow these easy instructions:
+
+1) Create a new user if necessary. This user will be the one that is automatically sending new users a message.
+
+2) Get this user's user ID. You can get this by going to "View Users" in the Admin Panel and finding the username. The ID is the number in the left-most column.
+
+3) In signup.php, around line 170, there is this code:  
+        // UPDATE SIGNUP STATS
+        update_stats("signups");
+
+Directly below it, add this code:
+  // SEND NEW USER A WELCOME MESSAGE
+  $pm_authoruser_id = YOUR USER ID;
+  $signup_pm_user = new se_user(array(1));
+  $signup_pm_user->user_info['level_message_allow'] = 2;
+  
+  $signup_pm_user->user_message_send
+  (
+    /* NEW USER'S USERNAME */
+    $new_user->user_info['user_username'],
+   'Welcome!', 
+   'Hello '.$new_user->user_info['user_username'].', welcome to 4WeedSmokers comunity! If you need any help, please send me a message.'
+  );
+        
+  $database->database_query("INSERT INTO se_pms (pm_authoruser_id) VALUES ('$pm_authoruser_id')");
+
+
+4) Change YOUR USER ID to the user id you got in step 2.
+
+5) If you wanted to change the Subject and the Message content, the subject is the 'Welcome!' and the message content is the 'Hello '.$new_user->user_info['user_username'].', welcome to social network! If you need any help, please send me a message.'
+
+This part: Hello '.$new_user->user_info['user_username'].'
+Allows you to say, Hello [username].
+
+You should be all set. Signup a new user and give it a try!

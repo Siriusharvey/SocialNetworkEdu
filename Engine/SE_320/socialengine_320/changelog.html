@@ -1,0 +1,1224 @@
+<html>
+<!-- $Id: changelog.html 291 2010-01-20 01:56:33Z phil $ -->
+<head>
+<title>SocialEngine Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>SocialEngine Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+
+<h2>Version 3.20</h2>
+<ol>
+  <li>admin/admin_cache.php - Corrected cache typo</li>
+  <li>include/class_inputfilter.php - Patched input filter to allow for advanced features in FCKeditor</li>
+  <li>include/cake/libs/session.php - Fixed compatability issue with PHP 4</li>
+  <li>include/cake/libs/session/* - Fixed compatability issue with PHP 4</li>
+  <li>include/version.php - Incremented version</li>
+  <li>templates/header.tpl - Adjusted for logout to use POST instead of token to fix logout bug</li>
+  <li>templates/home.tpl - Adjusted for logout to use POST instead of token to fix logout bug</li>
+
+</ol>
+
+<h2>Version 3.19</h2>
+<ol>
+  <li>signup.php - Fixed bug where a non-active profile category would prevent new signups when sorted above active profile category</li>
+  <li>footer.php - Logout token assignment</li>
+  <li>header.php - Updated caching/sessions; added support for banning ip ranges</li>
+  <li>user_logout.php - Uses token to prevent IMG XSS</li>
+  <li>admin/admin_cache.php - Updated caching (now includes apc and xcache support)</li>
+  <li>admin/admin_header.php - Updated caching/sessions</li>
+  <li>admin/admin_login.php - Now stripping EOL characters from username/password when logging in</li>
+  <li>admin/admin_session.php - Updated sessions (now includes db support)</li>
+  <li>admin/admin_url.php - Fixed profile's .htacces mod_rewrite rule for profile tab access (note: please re-generate your .htaccess file via Admin > URL Settings for this change to take effect)</li>
+  <li>images/secure.php - Modification to prevent captcha XSS problems</li>
+  <li>include/cache/* - Removed (moved to cake)</li>
+  <li>include/cake/* - Added</li>
+  <li>include/session/* - Removed (moved to cake)</li>
+  <li>include/class_comment.php - Prevents captcha XSS problem</li>
+  <li>include/class_firephp.php - PHP4 compat version of firephp protocol (not activated by default, used for troubleshooting ajax)</li>
+  <li>include/class_inputfilter.php - Replaced/upgraded</li>
+  <li>include/class_upload.php - Compatibility fix for PHP 5.3.0+ (renamed GD "JPEG Support")</li>
+  <li>include/class_url.php - Modification to "base href" meta tag to make visibility with HTTPS/SSL protection compatible</li>
+  <li>include/functions_general.php - Compat for cake/basics; added support for banning ip ranges; cleanHTML() uses new inputfilter class; censored words now only strip words wrapped by word boundaries</li>
+  <li>include/js/class_comments.js - Fixed reply-to-comments error with directory-based URLs</li>
+  <li>include/js/core-min.js - Rebuilt</li>
+  <li>include/js/sprintf.js - Rewritten</li>
+  <li>include/version.php - Incremented version</li>
+  <li>templates/admin_cache.tpl - Updated caching</li>
+  <li>templates/admin_fields.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_language_edit.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_login.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_lostpass_reset.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_lostpass.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_profile.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_session.tpl - Updated sessions</li>
+  <li>templates/admin_stats.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_styles.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/admin_templates.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/header.tpl - Add user logout token (required or users won't be able to logout)</li>
+  <li>templates/home.tpl - Added token to logout url; changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/offline.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/profile_photos_file.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/profile.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout; Re-worded "Add to Friends" to "Edit Friendship" on Friends tab when looking at your own profile</li>
+  <li>templates/signup.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/styles_global.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/styles.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/user_messages_new.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>
+    Other:<br />
+    The upgrade script will modify the se_usersettings columns to allow greater growth of action display/publish settings. 
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.18</h2>
+<ol>
+  <li>templates/user_home.tpl - Fixed date formatting to match site-wide setting</li>
+  <li>include/class_user.php - Optimized SQL queries in SE_User() and user_account() to no longer use "LOWER()" in lieu of collation case-insensitivity and index utilization</li>
+  <li>include/class_action.php - Optimized SQL query for action feed items, now uses index for sorting purposes</li>
+  <li>include/class_user.php - Shortened se_visitors table data to optimize speed of insert/updates</li>
+  <li>include/version.php - Incremented version</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.17</h2>
+<ol>
+  <li>header.php - Fixed some remaining issues with sessions</li>
+  <li>user_messages_view.php - Fixed PHP4 compatibility issue</li>
+  <li>include/class_user.php - Fixed some remaining issues with sessions</li>
+  <li>include/functions_general.php - Fixed some remaining issues with sessions</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/cache/handler/serial.php - Fixed handling issue with memcached</li>
+  <li>include/session/session.php - Fixed some remaining issues with sessions</li>
+  <li>templates/user_upload.tpl - Fixed problem with MAX_FILE_SIZE in upload form</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.16</h2>
+<ol>
+  <li>user_account_privacy.php - Fixed issue with handling user search when option disabled in admin panel, could cause problems with some users not showing in popular members</li>
+  <li>user_messages_view.php - Fixed blocking issue with replies</li>
+  <li>admin/admin_stats.php - Fixed bug in calculating database size</li>
+  <li>admin/admin_viewadmins.php - Fixed a bug related to long admin name or email</li>
+  <li>include/class_user.php - Fixed blocking issue with replies; fixed issue with "add to friends" link on users' profile friends list</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/sanity/common.php - Fixed (spelling) typo</li>
+  <li>include/session/session.php - Cookie domain should no longer change according to (sub)domain of access; fixed issue with second level CCLDs</li>
+  <li>templates/admin_viewadmins.tpl - Fixed a bug related to long admin name or email</li>
+  <li>templates/header.tpl - Changed the limit at which the "More ..." tab is displayed from 9 to 7 (non-critical)</li>
+  <li>templates/home.tpl - Fixed a bug in truncating usernames with apostrophes (non-critical)</li>
+  <li>templates/user_messages_view.tpl - Fixed blocking issue with replies</li>
+  <li>
+    Other:<br />
+    The upgrade script will truncate the session keys table and regenerate the session name to prevent cookie conflict using the new domain detection method
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.15</h2>
+<ol>
+  <li>admin/admin_home.php - Added statistics reporting (see install or upgrade script notice)</li>
+  <li>include/class_actions.php - Changes to prevent problems caused by corrupted action types</li>
+  <li>include/class_admin.php - Fixed admin editing bug</li>
+  <li>include/class_field.php - Added some additional error suppression; fixed bug with required dependent fields</li>
+  <li>include/class_comment.php - Fixed newline handling issue</li>
+  <li>include/class_database.php - Added change to prevent problems on some MySQL5 servers</li>
+  <li>include/class_user.php - Adjusted session cookie settings</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/js/class_comments.js - Fixed bug with group/event media comments</li>
+  <li>include/js/class_user.js - Fixed bug with notification cookies that would occasionally cause it to not be displayed</li>
+  <li>include/js/core-min.js - Fixed bug with group/event media comments</li>
+  <li>include/session/session.php - Adjusted session cookie settings</li>
+  <li>templates/home.tpl - Fixed bug preventing usage of "Remember Me" when logging in through the home page</li>
+  <li>templates/profile.tpl - Fixed reporting bug</li>
+  <li>templates/profile_photos_file.tpl - Fixed reporting bug</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.14</h2>
+<ol>
+  <li>header.php - Fixed utf8 problems in the status by settings mbstring library's internal encoding to utf8, if loaded; fixed possible minor problem with referenced session object</li>
+  <li>misc_js.php - Fixed several minor security vulnerabilities</li>
+  <li><b>user_account_delete.php - Fixed major security vulnerability</b></li>
+  <li>user_editprofile_photo.php - Fixed minor security vulnerability</li>
+  <li>user_friends_manage.php - Fixed minor security vulnerability; fixed bug where select was shown when no predefined types existed</li>
+  <li>admin/admin_header.php - Incorrect header assignment; fixed possible minor problem with referenced session object</li>
+  <li>include/class_actions.php - Fixed bug that would occur when users are not allowed to choose which actions to publish about themselves</li>
+  <li>include/class_admin.php - Fixed possible minor problem with referenced session object</li>
+  <li>include/class_field.php - Fixed bug with required dependent fields</li>
+  <li><b>include/class_inputfilter.php - Fixed vulnerability that would let users inject disallowed tags</b></li>
+  <li>include/class_javascript.php - Added notify output handler</li>
+  <li>include/class_notify.php - Added delete method; modifed notify_summry to work better with ajax updates</li>
+  <li>include/class_user.php - Fixed missing delete that would cause orphaned rows in the se_usersettings table when deleting a user; added session resume handling to fix session length problems; fixed a bug that would make it take two minutes for users to show up in online list after login</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/js/class_comments.js - Added code to assist with security fixes</li>
+  <li>include/js/class_tags.js - Added code to assist with security fixes</li>
+  <li>include/js/class_user.js - Added code to assist with security fixes</li>
+  <li>include/js/core-min.js - Updated changed components</li>
+  <li>include/session/session.php - Added session resume handling to fix session length problems</li>
+  <li>templates/header.tpl - Fixed minor security vulnerability</li>
+  <li>templates/header_global.tpl - Added header to force IE8 into compatibility mode</li>
+  <li>templates/profile.tpl - Fixed minor security vulnerability</li>
+  <li><b>templates/user_account_delete.tpl - Fixed major security vulnerability</b></li>
+  <li>templates/user_editprofile_photo.tpl - Fixed minor security vulnerability</li>
+  <li>templates/user_home.tpl - Fixed minor security vulnerability</li>  <li>
+    Other:<br />
+    The install and upgrade scripts now check system settings<br />
+    New default method for password encryption is md5(), which is more portable that crypt().
+  </li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.13</h2>
+<ol>
+  <li>header.php - Fixed bug preventing switching of some profile tabs</li>
+  <li>include/class_actions.php - Fixed bug that would sometimes prevent action media from being inserted</li>
+  <li>include/class_user.php - Fixed bug that would not properly handle verification status on signup</li>
+  <li>include/functions_general.php - Fixed bug that caused profile search problems</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/smarty/plugins/hook_foreach.php - Fixed bug that would cause the "More ..." to show up if there were no registered items</li>
+  <li>templates/admin_home.tpl - Fixed IE bug with admin notification box</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.12</h2>
+<ol>
+  <li>footer.php - Added some built-in benchmarking code</li>
+  <li>header.php - Added some built-in benchmarking code; added handling for new template hooks and smarty features</li>
+  <li>lostpass.php - Fixed problem where cached user settings would not let users reset their password until the cache is cleared out (only if caching is enabled)</li>
+  <li>lostpass_reset.php - Added code to handle changes to user password encryption</li>
+  <li>misc_js.php - Fixed several possible minor SQL injection vulnerabilities; added some built-in benchmarking code</li>
+  <li>search_advanced.php - Fixed possible minor SQL injection vulnerabilitry</li>
+  <li>signup.php - Added code to handle changes to user password encryption</li>
+  <li>user_account_pass.php - Added code to handle changes to user password encryption</li>
+  <li>user_home.php - Fixed typo that was preventing new announcements from showing</li>
+  <li>admin/admin_header.php - Added session handling code; added handling for new template hooks and smarty features</li>
+  <li>admin/admin_home.php - Added system checking code</li>
+  <li>admin/admin_lostpass_reset.php - Added code to handle changes to admin class for sessions and password encryption</li>
+  <li>admin/admin_viewplugins.php - Cache was not being flushed on enable/disable</li>
+  <li>admin/admin_viewusers_edit.php - Added code to handle changes to user password encryption</li>
+  <li>images/alert.gif - Icon used in system check</li>
+  <li>include/class_actions.php - Removed some redundant code</li>
+  <li>include/class_admin.php - Now uses sessions and allows for alternate password encryption methods</li>
+  <li>include/class_benchmark.php - Added some built-in benchmarking code</li>
+  <li>include/class_comment.php - Fixed several possible minor SQL injection vulnerabilities</li>
+  <li>include/class_database.php - Query logging will now default to the value of the constant SE_DEBUG (as specified in header.php)</li>
+  <li>include/class_inputfilter.php - Removed the hard-coded rule that filters out iframes regardless of allowed tag settings; was using iso charset to decode entities, now will only decode special chars to prevent utf8 problems</li>
+  <li>include/class_smarty.php - Added an extension to the base smarty object to be used in SE</li>
+  <li>include/class_user.php - Now allows for alternate password encryption methods; user_displayname was not being properly set on signup; fixed displayname generation when having only one special name field; should now delete notifications for messages sent by the user when the user is deleted; removed session restart on login</li>
+  <li>include/functions_general.php - Added support for the quote style argument to emulated htmlspecialchars_decode()</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/cache/cache.php - Changed handling of "enabled" setting to try and prevent caching from becoming enabled when set to off</li>
+  <li>include/cache/storage/file.php - Removed some debugging code that might cause permission problems in some cases</li>
+  <li>include/js/core-min.js - A minified version of all of the js files included in the platform (originals may no longer be included)</li>
+  <li>include/js/mootools12-min.js - A combined version of mootools core and more (originals may no longer be included)</li>
+  <li>include/js/smoothbox.js - Removed some code that was not necessary</li>
+  <li>include/language/language.php - Fixed problem with language select conflict in admin panel</li>
+  <li>include/sanity/* - Added system check class for use in the admin panel and installer</li>
+  <li>include/smarty/smarty_config.php - Removed</li>
+  <li>include/smarty/plugins/block.hook_foreach.php - Added</li>
+  <li>include/smarty/plugins/compiler.hook_include.php - Added</li>
+  <li>templates/admin_activity.tpl - Fixed bug caused by not upgrading to new lang_sprinf syntax</li>
+  <li>templates/admin_header_global.tpl - Using minified javascript includes by default</li>
+  <li>templates/admin_home.tpl - Added system checking code</li>
+  <li>templates/admin_styles.css - Added styles for notifications on admin_home.php</li>
+  <li>templates/debug.tpl - Added some built-in benchmarking code</li>
+  <li>templates/footer.tpl - Implemented new template hooks</li>
+  <li>templates/header.tpl - Added some built-in benchmarking code; added drop down menu for main menu to prevent layout problems with lots of items</li>
+  <li>templates/header_debug.tpl - Added</li>
+  <li>templates/header_global.tpl - Implemented new template hooks; using minified javascript includes by default</li>
+  <li>templates/home.tpl - Fixed rare bug related to action media where incorrect images would be displayed</li>
+  <li>templates/network.tpl - Fixed rare bug related to action media where incorrect images would be displayed</li>
+  <li>templates/profile.tpl - Fixed un-upgraded code in activity feed for group and event media comments; fixed rare bug related to action media where incorrect images would be displayed; implemented new template hooks; added drop down menu for profile tabs to prevent layout problems with lots of items</li>
+  <li>templates/styles.css - Added some styles for the main menu drop down menu, profile tab drop down menu and debugger</li>
+  <li>templates/user_home.tpl - Fixed rare bug related to action media where incorrect images would be displayed</li>
+  <li>
+    Other:<br />
+    The install and upgrade scripts now check system settings<br />
+    New default method for password encryption is md5(), which is more portable that crypt().
+  </li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.11</h2>
+<ol>
+  <li>misc_js.php - Fixed eventmedia and groupmedia comment post action title; fixed truncation problem in user status; fixed typo that would cause problems with tagging</li>
+  <li>signup_verify.php - If email verification is required, signup action will now only be shown when the user completes verification</li>
+  <li>user_account.php - A missing user setting for a notify type will no longer throw SQL errors (for the winks third-party plugin)</li>
+  <li>user_messages_view.php - Fixed privacy issue with viewing messages</li>
+  <li>admin/admin_stats.php - Fixed some incorrect language</li>
+  <li>include/class_actions.php - Fixed problem with actions not showing if user is logged out; fixed caching related problem with event and group action feeds</li>
+  <li>include/class_comment.php - Made change to fix group media comment in notifications</li>
+  <li>include/class_field.php - If a date field is required, it must be completely entered now, instead of just the month and either the day or year</li>
+  <li>include/class_notify.php - Fixed possible errors generated when fed improperly formatted data</li>
+  <li>include/class_user.php - If email verification is required, signup action will now only be shown when the user completes verification; fixed privacy issue with viewing messages; fixed bug in user_invisible handling in the visitors table</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/functions_general.php - Made change to fix group media comment in notifications; fixed site news not displaying problem</li>
+  <li>include/fckeditor/editor/dialog/fck_image.html - Moved from blog plugin so platform upgrades won't overwrite it</li>
+  <li>include/fckeditor/editor/dialog/fck_image/fck_image_preview.html - Moved from blog plugin so platform upgrades won't overwrite it</li>
+  <li>include/fckeditor/editor/dialog/fck_image/fck_image.js - Moved from blog plugin so platform upgrades won't overwrite it</li>
+  <li>include/language/compiler.php - Fixed problem that would rarely cause javascript errors when using the lang_javascript function</li>
+  <li>include/language/language.php - Fixed problem where utf8 in the language_name would not show up properly</li>
+  <li>include/language/storage.php - Fixed problem where utf8 in the language_name would not show up properly</li>
+  <li>include/language/storage/mysql.php - Fixed typo that would prevent editing</li>
+  <li>templates/home.tpl - Some typos that would prevent signups and popular users from showing if there were no recent logins; fixed spacing issue noticeable when no users are online</li>
+  <li>templates/user_home.tpl - Fixed timezone bug with friends birthdays that would cause it to be off by one day</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.10</h2>
+<ol>
+  <li>footer.php - Added benchmark code; changes to make modified language class work correctly</li>
+  <li>header.php - Added SE_ROOT constant that gives an absolute path to the root folder; added benchmark code; added caching includes; changed plugin selection order to use new order column; excluded misc_js.php from stat views update</li>
+  <li>help_contact.php - Added captcha</li>
+  <li>home.php - Implemented caching code</li>
+  <li>invite.php - Removed session_start() (now in header.php)</li>
+  <li>login.php - Added captcha, can be disabled, enabled or shown after a certain number of failed logins (Admin Panel->Banning and Spam)</li>
+  <li>misc_js.php - Converted some tasks to use json_encode to prevent escaping problems</li>
+  <li>signup.php - Removed session_start() (now in header.php)</li>
+  <li>user_account.php - Added code to flush cached data when editing</li>
+  <li>user_account_privacy.php - Added code to flush cached data when editing</li>
+  <li>user_editprofile.php - Added code to flush cached data when editing; added code to update the displayname stored in the user table based on the user settings.</li>
+  <li>user_home.php - Implemented caching code</li>
+  <li>user_upload.php - Removed session_start() (now in header.php); now includes header before action for session support</li>
+  <li>admin/admin_cache.php - Added</li>
+  <li>admin/admin_connections.php - Fixed warning for empty types</li>
+  <li>admin/admin_fields.php - Added code to flush cached info when editing</li>
+  <li>admin/admin_footer.php - Added language pack assignment for admin selection</li>
+  <li>admin/admin_header.php - Added caching includes; added SE_ROOT constant; changed $global_plugins to an assoc array like header.php</li>
+  <li>admin/admin_profile_edit.php - Added for custom displayname generation</li>
+  <li>admin/admin_language_export.php - Added</li>
+  <li>admin/admin_language_import.php - Added</li>
+  <li>admin/admin_session.php - Added</li>
+  <li>admin/admin_subnetworks.php - Added code to flush cached info when editing</li>
+  <li>admin/admin_viewplugins.php - Added the ability to change the plugin order (will affect the order plugins show up in menus, profiles, etc)</li>
+  <li>images/secure.php - Added header include to utilize session class</li>
+  <li>images/icons/admin_cache16.gif - Added</li>
+  <li>images/icons/admin_session16.gif - Added</li>
+  <li>include/class_actions.php - Implemented caching; added a fix for corrupted action items; added code to clean out actionmedia; fixed negative limit problem</li>
+  <li>include/class_ads.php - Changed ad loading to load() method so ads won't be loaded for ajax requests to fix view count</li>
+  <li>include/class_comment.php - Added fix for group and event media comments by including the parent id in the action vars; removed session_start() (now in header.php)</li>
+  <li>include/class_core.php - Added, contains some static methods for retrieving settings and other info</li>
+  <li>include/class_database.php - Added enhanced logging, private last_resource variable, and the load all functions</li>
+  <li>include/class_javascript.php - Added wrapper for the json_encode() function; added code to prevent error in admin panel</li>
+  <li>include/class_language.php - Main code moved to include/language/*, this is a placeholder/loader</li>
+  <li>include/class_upload.php - Small fix in image resizing</li>
+  <li>include/class_user.php - Made change to the checkCookies method to allow for caching; fixed the user_delete() method to work with the new pm system; changed handling of user_lastactive to prevent MySQL lockups; added display name method (first/last last/first custom) and caching of this value in the user table; setcookie of login info instead uses the session class; copied code from user_create to user_photo_upload to allow for double-checking of user folder creation</li>
+  <li>include/class_url.php - Added code to cache the URL conversion settings</li>
+  <li>include/functions_file.php - Some file functions used in file-based caching</li>
+  <li>include/functions_general.php - Moved some code from home.php and user_home.php here with caching implementation; online_users() speed optimized</li>
+  <li>include/version.php - Incremented version</li>
+  <li>include/cache/* - Added caching class</li>
+  <li>include/session/* - Added session class</li>
+  <li>include/js/smoothbox.js - Modification to prevent IE errors in smoothbox</li>
+  <li>include/language/* - Moved from include/class_language.php; now supports multiple storage methods (mysql and file); added preload (can ignore preload by setting to false), assign (assigns function output to a smarty variable), and print (does function echo result, defaults to TRUE if assign is not set, FALSE if assign is set) attributes to the lang_print and lang_sprintf functions; added args attribute (vsprintf) to lang_sprintf (args=smarty_variable)</li>
+  <li>include/smarty/plugins/modifier.truncate.php - Reverted to original file (mbstring functions removed) in favor of <a href="http://www.socialengine.net/faq.php?faq_id=54&task=showitem#faq54">mbstring.func_overload</a></li>
+  <li>templates/admin_banning.tpl - Corrected small HTML layout errors; added captcha options for login and contact forms</li>
+  <li>templates/admin_cache.tpl - Added</li>
+  <li>templates/admin_fields.tpl - Added a new max length option (30)</li>
+  <li>templates/admin_header.tpl - Added caching and sessions link; changed plugin loop from section to foreach</li>
+  <li>templates/admin_header_global.tpl - Fixed IE "Operation aborted" error in the tips initialization; changed plugin loop from section to foreach</li>
+  <li>templates/admin_home.tpl - Added admin language selection; </li>
+  <li>templates/admin_language.tpl - Added import and export links</li>
+  <li>templates/admin_language_export.tpl - Added</li>
+  <li>templates/admin_language_import.tpl - Added</li>
+  <li>templates/admin_levels_edit.tpl - Changed plugin loop from section to foreach</li>
+  <li>templates/admin_levels_messagesettings.tpl - Changed plugin loop from section to foreach</li>
+  <li>templates/admin_levels_usersettings.tpl - Changed plugin loop from section to foreach</li>
+  <li>templates/admin_session.tpl - Added</li>
+  <li>templates/admin_viewplugins.tpl - Added the ability to change the plugin order (will affect the order plugins show up in menus, profiles, etc)</li>
+  <li>templates/header.tpl - Modification to prevent IE errors in smoothbox</li>
+  <li>templates/header_global.tpl - Fixed IE "Operation aborted" error in the tips initialization</li>
+  <li>templates/help_contact.tpl - Added captcha</li>
+  <li>templates/home.tpl - Activity feed fix for group/event media comments (Will require next version of those plugins); added login captcha (see login.tpl/login.php); adjusted layout for alignment problems in Recent Signups, Login, etc</li>
+  <li>templates/login.tpl - Added captcha, can be disabled or enabled, or shown after a certain number of failed logins (Admin Panel->Banning & Spam)</li>
+  <li>templates/network.tpl - Activity feed fix for group/event media comments (Will require next version of those plugins)</li>
+  <li>templates/profile.tpl - Activity feed fix for group/event media comments (Will require next version of those plugins)</li>
+  <li>templates/user_home.tpl - Activity feed fix for group/event media comments (Will require next version of those plugins)</li>
+  <li>
+    Other:<br />
+    Changed default max length for the first and last name fields in the
+    installer to 30<br />
+    The se_visitors table structure has been changed. Now uses InnoDB and will
+    keep track of the logged in users. This is to prevent
+    lockups with the user_lastactive column. The user_lastactive will still be
+    updated (for advanced search), but only every two minutes to prevent
+    lockups.
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.07</h2>
+<ol>
+  <li>misc_js.php - Now can cache the total comments in the parent table if the parent table supports it (column format: {$parentColumnPrefix}_totalcomments). Silent failure uses old handling (counts comments in comment table)</li>
+  <li>user_messages.php - Optimized PM system</li>
+  <li>user_messages_new.php - Optimized PM system</li>
+  <li>user_messages_outbox.php - Optimized PM system</li>
+  <li>user_messages_view.php - Optimized PM system</li>
+  <li>admin/admin_levels_usersettings.php - Fixed bug in updating user privacy after change</li>
+  <li>include/class_comment.php - Now can cache the total comments in the parent table if the parent table supports it (column format: {$parentColumnPrefix}_totalcomments). Silent failure uses old handling (counts comments in comment table)</li>
+  <li>include/class_user.php - Optimized PM system</li>
+  <li>include/version.php - Version incremented.</li>
+  <li>include/uploader/FancyUpload2.js - Fixed uploader for Flash 10</li>
+  <li>include/uploader/Swiff.Uploader.js - Fixed uploader for Flash 10</li>
+  <li>include/uploader/Swiff.Uploader.swf - Fixed uploader for Flash 10</li>
+  <li>templates/user_upload.tpl - Fixed uploader for Flash 10; added client-side support for max size and max file limits and allowed extensions</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.06</h2>
+<ol>
+  <li>include/class_user.php - Fixed bug causing all friends lists not to show up.</li>
+  <li>include/version.php - Version incremented.</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.05</h2>
+<ol>
+<li>header.php - Fixed problem with stats being updated when chat refreshes.</li>
+<li>help_tos.php - Fixed SEO description for terms of service.</li>
+<li>misc_js.php - Fixed problem with removing tags for groups, comment retrieval now uses json.</li>
+<li>profile_photos_file.php - Notifications are now deleted when you see a tagged photo of yourself.</li>
+<li>search_advanced.php - Fixed bug in query.</li>
+<li>user_account_privacy.php - When a user changes their privacy settings, their actions are now updated too.</li>
+<li>user_editprofile.hp - Fixed query error.</li>
+<li>admin/admin_levels_usersettings.php - Fixed sorting error.</li>
+<li>include/class_actions.php - Modified the hook to work for groups.</li>
+<li>include/class_javascript.php - Fixed minor data type bug.</li>
+<li>include/class_language.php - Fixed warnings in admin panel.</li>
+<li>include/class_notify.php - Fixed notifications bug when user is not logged in.</li>
+<li>include/class_user.php - Made minor adjustments to ensure proper links are displayed on profile.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/admin_activity.tpl - Made recent activity work for groups.</li>
+<li>templates/admin_announcements.tpl - Fixed announcement bug.</li>
+<li>templates/admin_fields.tpl - Changed the default for display.</li>
+<li>templates/admin_fields_js.tpl - Added modification to work with groups.</li>
+<li>templates/profile.tpl - Fixed pagination problem on friends page, condition for links.</li>
+<li>templates/signup.tpl - Fixed minor javascript error.</li>
+</ol>
+
+
+
+<br><br>
+
+<h2>Version 3.04</h2>
+<ol>
+<li>Added language variables ID: 1202-1228.</li>
+<li>footer.php - Added javascript assign.</li>
+<li>header.php - Added javascript class, ensured that stats will not update when chat is loaded.</li>
+<li>help_tos.php - Made terms of signup a language variable.</li>
+<li>misc_js.php - Added comment code and tag code.</li>
+<li>profile.php - Now retrieves all photos tagged of a person.</li>
+<li>profile_photos.php - Added new page to display photos of a user.</li>
+<li>profile_photos_file.php - Added new page to display photos of a user.</li>
+<li>signup.php - Fixed bug with invitation emails.</li>
+<li>signup_verify.php - Fixed signup verification process.</li>
+<li>user_account.php - Fixed bug with email verification.</li>
+<li>user_account_privacy.php - Fixed blocklist bug.</li>
+<li>user_upload.php - Fixed problem with overwritten session vars.</li>
+<li>admin/admin_fields.php - Ensured that adding fields works for other plugins.</li>
+<li>admin/admin_header.php - Enabled javascript API.</li>
+<li>admin/admin_home.php - Fixed XMLRPC library interference.</li>
+<li>admin/admin_language_edit.php - Fixed problem of some variables not loading properly.</li>
+<li>admin/admin_levels.php - New levels now take on all attributes of default level.</li>
+<li>admin/admin_levels_usersettings.php - Privacy is now set to more public if settings are changed.</li>
+<li>admin/admin_signup.php - Made terms of signup a language variable.</li>
+<li>admin/admin_viewplugins.php - Fixed XMLRPC library interference.</li>
+<li>images/media_placeholder.gif - Added new media image.</li>
+<li>images/icons/media_moveleft.gif - Added new media image.</li>
+<li>images/icons/media_moveleft2.gif - Added new media image.</li>
+<li>images/icons/media_moveright.gif - Added new media image.</li>
+<li>images/icons/media_moveright2.gif - Added new media image.</li>
+<li>images/icons/photos16.gif - Added new media image.</li>
+<li>images/icons/socialbookmarking_delicious16.gif - Added new media image.</li>
+<li>images/icons/socialbookmarking_digg16.gif - Added new media image.</li>
+<li>images/icons/socialbookmarking_facebook16.gif - Added new media image.</li>
+<li>images/icons/socialbookmarking_fark16.gif - Added new media image.</li>
+<li>images/icons/socialbookmarking_myspace16.gif - Added new media image.</li>
+<li>include/class_actions.php - Added a hook.</li>
+<li>include/class_javascript.php - Added a new javascript handler class.</li>
+<li>include/class_language.php - Added a method to get language variable easily.</li>
+<li>include/class_user.php - Fixed bug with cookie names.</li>
+<li>include/functions_general.php - Removed superfluous part of a search query.</li>
+<li>include/version.php - Version incremented.</li>
+<li>include/js/autosuggest.js - Fixed minor FF3 bug.</li>
+<li>include/js/class_base.js - Added new javascript class.</li>
+<li>include/js/class_comments.js - Added new javascript class.</li>
+<li>include/js/class_core.js - Added new javascript class.</li>
+<li>include/js/class_language.js - Added new javascript class.</li>
+<li>include/js/class_tags.js - Added new javascript class.</li>
+<li>include/js/class_url.js - Added new javascript class.</li>
+<li>include/js/class_user.js - Added new javascript class.</li>
+<li>include/js/smoothbox.js - Fixed minor bugs.</li>
+<li>include/js/sprintf.js - Fixed javascript function.</li>
+<li>templates/admin_fields.tpl - Ensured that adding fields works for other plugins.</li>
+<li>templates/admin_fields_js.tpl - Ensured that adding fields works for other plugins.</li>
+<li>templates/admin_header.tpl - Fixed admin menu.</li>
+<li>templates/admin_header_global.tpl - Enabled javascript API.</li>
+<li>templates/admin_profile.tpl - Ensured that adding fields works for other plugins.</li>
+<li>templates/admin_signup.tpl - Made terms of signup a language variable.</li>
+<li>templates/header_global.tpl - Added code for javascript API.</li>
+<li>templates/profile.tpl - Added new link for photos of a user.</li>
+<li>templates/profile_photos.tpl - Added new page for photos of a user.</li>
+<li>templates/profile_photos_file.tpl - Added new page for photos of a user.</li>
+<li>templates/styles.css - Added comment headline style, styles for photos of user, photo tagging.</li>
+<li>templates/user_upload.tpl - Fixed problem with progress bars.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 3.03</h2>
+<ol>
+<li>Added language variables ID: 1183-1201.</li>
+<li>footer.php - Changed assigns to assign_by_ref to save memory, added way of knowing if in a smoothbox or not.</li>
+<li>header.php - Added ability to disable plugins.</li>
+<li>home.php - Updated the way actions are displayed.</li>
+<li>login.php - Updated the way actions are added.</li>
+<li>misc_js.php - Updated the way comments are posted, added a task to pull all friends.</li>
+<li>network.php - Updated the way actions are displayed.</li>
+<li>profile.php - Updated the way actions are displayed.</li>
+<li>search.php - Changed search for plugins.</li>
+<li>signup.php - Added a hook.</li>
+<li>signup_verify.php - Fixed re-send verification email bug.</li>
+<li>user_account.php - Consolidated where notification options are displayed, fixed lost profile info and other minor bugs.</li>
+<li>user_editprofile.php - Updated the way actions are added.</li>
+<li>user_editprofile_photo.php - Updated the way actions are added.</li>
+<li>user_friends_manage.php - Updated the way actions are added.</li>
+<li>user_home.php - Updated the way actions are displayed, removed unnecessary code.</li>
+<li>user_upload.php - Added new global uploader.</li>
+<li>admin/admin_footer.php - Changed assigns to assign_by_ref to save memory.</li>
+<li>admin/admin_header.php - Added code to uninclude disabled plugins.</li>
+<li>admin/admin_language_edit.php - Some language variables were uneditable.</li>
+<li>admin/admin_levels_usersettings.php - Was updating all user privacy settings, not just the users in that level.</li>
+<li>admin/admin_viewplugins.php - Added ability to disable plugins.</li>
+<li>admin/admin_viewusers_edit.php - Changed the way actions were displaying.</li>
+<li>images/icons/menu_apps.gif - Very minor cosmetic change (thanks to OpenMods).</li>
+<li>images/uploader_bar.gif - Added new uploader image.</li>
+<li>images/uploader_failed.gif - Added new uploader image.</li>
+<li>images/uploader_file.gif - Added new uploader image.</li>
+<li>images/uploader_progress.gif - Added new uploader image.</li>
+<li>images/uploader_success.gif - Added new uploader image.</li>
+<li>images/uploader_uploading.gif - Added new uploader image.</li>
+<li>images/uploader_browse.gif - Added new uploader image.</li>
+<li>images/uploader_upload.gif - Added new uploader image.</li>
+<li>include/js/autosuggest.js - Fixed FF3 autosuggest bug.</li>
+<li>include/js/class_language.js - Added language handler for JS.</li>
+<li>include/js/smoothbox.js - Added way of knowing whether TPL is in a smoothbox or not.</li>
+<li>include/js/sprintf.js - Added JS function sprintf.</li>
+<li>include/uploader/ - Entire directory of files for new uploader.</li>
+<li>include/jsonrpc/ - Entire directory of files for JSON use.</li>
+<li>include/class_actions.php - Changed the way actions are handled to allow for privacy.</li>
+<li>include/class_comment.php - Updated the way actions are added.</li>
+<li>include/class_language.php - Added new smart tags for javascript.</li>
+<li>include/class_notify.php - Fixed bug with deleting notifications.</li>
+<li>include/class_user.php - Updated way actions are added, fixed bug allowing anonymous users to comment even if not allowed, added new variable for comment deletion, ensured that friendships are only added once, fixed subnetwork bug, deleted action media when users are deleted.</li>
+<li>include/functions_general.php - Changed the way search works for profiles, fixed problem with make_page function, added ability to search by full name, fixed search for checkboxes, select boxes, and radio buttons.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/admin_header.tpl - When there is no settings files for a plugin, no menu item appears.</li>
+<li>templates/admin_viewplugins.tpl - Added ability to disable plugins.</li>
+<li>templates/footer.tpl - Closed unclosed table tag, added plugin footer templates.</li>
+<li>templates/header.tpl - Added a way of knowing whether page is in a smoothbox or not.</li>
+<li>templates/header_global.tpl - Added javascript tags.</li>
+<li>templates/home.tpl - Fixed minor stylistic bug.</li>
+<li>templates/profile.tpl - Added way to add under-the-photo menu items, fixed reply link when subdirectory URLs are enabled.</li>
+<li>templates/search.tpl - Changed way search results are displayed.</li>
+<li>templates/search_advanced.tpl - Fixed language for date fields.</li>
+<li>templates/signup.tpl - Removed autosuggest on fields with no suggestions.</li>
+<li>templates/styles.css - Added additional classes.</li>
+<li>templates/styles_global.css - Added additional classes for uploader.</li>
+<li>templates/user_account.tpl - Consolidated where notification options are displayed.</li>
+<li>templates/user_editprofile.tpl - Removed autosuggest on fields with no suggestions.</li>
+<li>templates/user_friends.tpl - Truncated friend explanation.</li>
+<li>templates/user_upload.tpl - Added new global uploader.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 3.00beta/3.01beta/3.02</h2>
+<br>
+The upgrade to v3.02 involves replacing all of your PHP, TPL, and CSS files. This means that you will lose any changes you have made to these files. Unfortunately there is no easy way to avoid this since we've made so many changes to the platform. If possible, make a note about each change you've made in your current installation so that you can reapply them after the upgrade process. 
+
+<br><br><br>
+
+<h2>Version 2.83</h2>
+<ol>
+<li>include/version.php - Version incremented.</li>
+<li>admin/admin_header.php - Important Security Fix.</li>
+<li>header.php - Important Security Fix.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.82</h2>
+<ol>
+<li>include/version.php - Version incremented.</li>
+<li>include/class_inputfilter.php - Important Security Fix.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.81</h2>
+<ol>
+<li>include/version.php - Version incremented.</li>
+<li>include/class_user.php - Fixed bug with htmlspecialchars.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.80</h2>
+<ol>
+<li>profile_comments.php - Added a meta content/charset tag, added encoding on htmlspecialchars.</li>
+<li>user_editprofile_settings.php - Added encoding on htmlspecialchars, removed ability to add -moz-binding CSS.</li>
+<li>user_messages_new.php - Optimized multi-user message sending.</li>
+<li>include/class_action.php - Fixed security bug with actions.</li>
+<li>include/class_inputfilter.php - Fixed initialization method name.</li>
+<li>include/class_user.php - Added encoding on htmlspecialchars.</li>
+<li>include/functions_general.php - Added encoding on htmlspecialchars.</li>
+<li>include/version.php - Version incremented.</li>
+<li>include/smarty/Smarty_Compiler.class.php - Added encoding on htmlspecialchars.</li>
+<li>include/smarty/plugins/modifier.debug_print_var.php - Added encoding on htmlspecialchars.</li>
+<li>include/smarty/plugins/shared.escape_special_chars.php - Added encoding on htmlspecialchars.</li>
+<li>images/secure.php - Added a no-cache header.</li>
+<li>templates/header.tpl - Ads can no longer be hidden via user CSS.</li>
+<li>templates/footer.tpl - Ads can no longer be hidden via user CSS.</li>
+<li>admin/admin_announcements.php - Optimized announcement sending.</li>
+<li>admin/admin_viewreports_edit.php - Added encoding on htmlspecialchars.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$user_messages_new[8] = "Create your new message with the form below. You can separate multiple recipients with a semi-colon (;).";
+</blockquote>
+</li>
+</ol>
+
+
+<br><br>
+
+<h2>Version 2.71</h2>
+<ol>
+<li>templates/user_messages_new.tpl - Fixed problem with replying to messages and "invalid user" error.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.70</h2>
+
+<ol>
+<li>header.php - If GD is not enabled, verification images will be turned off.</li>
+<li>profile.php - Fixed bug with unregistered users being unable to see custom profile designs.</li>
+<li>user_home.php - Streamlined output of recent activity feed.</li>
+<li>user_messages_new.php - Multiple recipients can now be added for messages.</li>
+<li>admin/admin_announcements.php - Fixed problem with sending email messages to levels/subnetworks.</li>
+<li>admin/admin_templates_edit.php - Fixed problem with stripping slashes.</li>
+<li>include/class_inputfilter.php - Now checks to see if class has already been instantiated.</li>
+<li>include/functions_stats.php - Reduced queries in stat update function.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/footer.tpl - Ads can no longer be hidden with user CSS.</li>
+<li>templates/header.tpl - Ads can no longer be hidden with user CSS.</li>
+<li>templates/profile.tpl - Removed inline style from comment textarea.</li>
+<li>templates/styles.css - Removed inline style from comment textarea.</li>
+<li>templates/user_home.tpl - Streamlined output of recent activity feed.</li>
+<li>templates/user_messages_new.tpl - Multiple recipients can now be added for messages.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$help[26] = "If the administrator has enabled it, you can make your profile private by visiting the &lt;a href='user_editprofile_settings.php'&gt;Profile Privacy&lt;/a&gt; page.";<br>
+$user_messages_new[1] = "Please input valid users to send message to.";<br>
+$user_messages_new[2] = "Please enter a message.";<br>
+$user_messages_new[3] = "Please limit your recipients to five (5) users.";<br>
+$user_messages_new[15] = "Please enter a recipient.";<br>
+$user_messages_new[16] = "is not a valid username.";<br>
+$user_messages_new[17] = "You are not allowed to message user";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.60</h2>
+
+<ol>
+<li>home.php - Only verified and enabled users are displayed in the Newest Members box.</li>
+<li>search_advanced.php - Only verified and enabled users are displayed in search and browse results.</li>
+<li>signup.php - Added error messages pertaining to invite codes.</li>
+<li>user_editprofile_status.php - Fixed small security issue with status in conjuction with recent activity feed.</li>
+<li>admin/admin_announcements.php - Fixed warnings when either user levels or subnetworks are not selected.</li>
+<li>admin/admin_log.php - Removed "hostname" as it was slowing the page down to a crawl.</li>
+<li>include/functions_general.php - Only verified and enabled users are displayed in search results.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/home.tpl - Removed "Sponsor" area.</li>
+<li>templates/login.tpl - Added link to resend email verification, added language variable.</li>
+<li>templates/profile.tpl - Send Message option now checks if page owner can send messages before displaying.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$login[1] = "&lt;br&gt;If you are still waiting to receive your verification email, &lt;a href='signup_verify.php'&gt;click here&lt;/a&gt; to resend it.";<br>
+$login[2] = "Remember Me?";<br>
+$signup[5] = "The invite code and email address combination you have entered is invalid.";<br>
+$signup[6] = "The invite code you have entered is invalid.";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.50</h2>
+
+<ol>
+<li>search_advanced.php - Admin privacy settings now properly take precedence over user privacy settings.</li>
+<li>admin/admin_ads_add.php - Fixed GMT timezone setting issue.</li>
+<li>admin/admin_ads_edit.php - Fixed GMT timezone setting issue.</li>
+<li>include/class_upload.php - Disabling GD no longer causes an error.</li>
+<li>include/class_user.php - Eliminated PHP Warnings/Notices having to do with logging out.</li>
+<li>include/functions_email.php - Fixed bug caused by adding unicode support.</li>
+<li>include/functions_general.php - Admin privacy settings now properly take precedence over user privacy settings.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/admin_ads_add.tpl - Fixed problem with ad preview.</li>
+<li>templates/home.tpl - Online users display is now capped at 20.</li>
+<li>templates/profile.tpl - "Add to Friends" link no longer displays to unregistered users.</li>
+<li>templates/user_home.tpl - Online users display is now capped at 20.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.40</h2>
+
+<ol>
+<li>footer.php - Minor security bug fixed.</li>
+<li>header.php - Minor security bug fixed.</li>
+<li>user_editprofile_status.php - Status is now being censored.</li>
+<li>admin/admin_header.php - Minor security bug fixed.</li>
+<li>include/class_ads.php - Fixed minor HTML problem.</li>
+<li>include/class_upload.php - Uploaded files are now being given appropriate permissions.</li>
+<li>include/class_user.php - User's actions are now deleted when user is deleted.</li>
+<li>include/functions_email.php - Unicode now works in emails.</li>
+<li>include/functions_stats.php - Referrers from the same host are no longer being saved.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/admin_viewadmins.tpl - Fixed minor HTML problem.</li>
+<li>templates/signup.tpl - Put in a language variable.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$signup[4] = "OR";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.30</h2>
+
+<ol>
+<li>invite.php - Fixed small bug with invitation codes.</li>
+<li>search.php - Fixed result display problem when no profiles match search term but some plugin object does.</li>
+<li>search_advanced.php - Sorting can now be done in descending as well as ascending order.</li>
+<li>signup.php - Fixed problem with signup new feed action displaying in user's own news feed.</li>
+<li>user_home.php - Recent News Announcements now display HTML correctly in subjects.</li>
+<li>admin/admin_ads_add.php - Fixed minor issue with PHP 4 dates.</li>
+<li>admin/admin_ads_edit.php - Fixed minor issue with PHP 4 dates.</li>
+<li>admin/admin_profile_taborder.php - Fixed tab arrows displaying incorrectly.</li>
+<li>admin/admin_templates.php - Plugin header/footer/style files are now listed in the proper column.</li>
+<li>include/class_user.php - Fixed bug preventing user creation (only a bug on some systems).</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/admin_templates.tpl - Plugin header/footer/style files are now listed in the proper column.</li>
+<li>templates/home.tpl - Language variable inserted.</li>
+<li>templates/profile.tpl - "View All Comments" no longer displays if there are no comments on profile.</li>
+<li>templates/search.tpl - Fixed result display problem when no profiles match search term but some plugin object does.</li>
+<li>templates/search_advanced.tpl - Sorting can now be done in descending as well as ascending order.</li>
+<li>templates/styles.css - Minor CSS changes made.</li>
+<li>templates/user_editprofile.tpl - Minor template modification.</li>
+<li>templates/user_editprofile_comments.tpl - Minor template modification.</li>
+<li>templates/user_editprofile_photo.tpl - Minor template modification.</li>
+<li>templates/user_editprofile_settings.tpl - Minor template modification.</li>
+<li>templates/user_editprofile_status.tpl - Minor template modification.</li>
+<li>templates/user_friends_confirm.tpl - The "Edit Friendship Details" page was missing the "Outgoing Friend Requests" tab.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$home[14] = "Remember Me";<br>
+$search_advanced[5] = "Last Update (Asc)";<br>
+$search_advanced[6] = "Last Login (Asc)";<br>
+$search_advanced[7] = "Last Signup (Asc)";<br>
+$search_advanced[22] = "Sort Results By:";<br>
+$search_advanced[23] = "Last Update (Desc)";<br>
+$search_advanced[24] = "Last Login (Desc)";<br>
+$search_advanced[25] = "Last Signup (Desc)";<br>
+$user_friends_confirm[17] = "Outgoing Friend Requests";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.20</h2>
+
+<ol>
+<li>home.php - HTML can now be used in the subjects of news announcements.</li>
+<li>signup.php - Fixed bug when attempting to visit signup while logged in, default timezone is now selected.</li>
+<li>admin/admin_announcements.php - Fixed bug with email announcement when either more than one level or more than one subnetwork is selected (or if either no level or no subnetwork is selected).</li>
+<li>include/class_actions.php - Recent activity list now checks that friendships are confirmed.</li>
+<li>include/class_database.php - Added a way to retrieve the number of rows affected by a query.</li>
+<li>include/class_upload.php - Fixed bitmap, video upload bug.</li>
+<li>include/class_user.php - Fixed bug with subnetwork selection, replaced date language with variables.</li>
+<li>templates/admin_header.tpl - Added meta tag to force unicode on admin inputs.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$class_user[27] = "MONTH";<br>
+$class_user[28] = "DAY";<br>
+$class_user[29] = "YEAR";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.10</h2>
+
+<ol>
+<li>ad.php - Fixed bug when page was accessed directly.</li>
+<li>header.php - Fixed bug with ads not applying properly to user levels.</li>
+<li>footer.php - Removed listing of queries at the bottom of the page. </li>
+<li>login.php - Fixed error when user enters incorrect password.</li>
+<li>profile.php - Fixed problem with comment/profile privacy.</li>
+<li>profile_comments.php - Fixed problem with comment/profile privacy.</li>
+<li>profile_friends.php - Fixed problem with profile privacy.</li>
+<li>search.php - Fixed bug when results are greater than 200.</li>
+<li>search_advanced.php - Added online user notification for advanced search.</li>
+<li>user_editprofile_settings.php - Fixed problem with comment privacy setting.</li>
+<li>admin/admin_activity.php - Fixed bug with disabling actions.</li>
+<li>admin/admin_ads_add.php - Fixed htmlspecialchars_decode problem for PHP 5.</li>
+<li>admin/admin_ads_edit.php - Fixed htmlspecialchars_decode problem for PHP 5 and ad banner deletion issue.</li>
+<li>admin/admin_profile_addfield.php - Fixed problem of dropdown boxes and radio buttons autoselecting the first option if not on signup.</li>
+<li>admin/admin_profile_editfield.php - Fixed problem of dropdown boxes and radio buttons autoselecting the first option if not on signup.</li>
+<li>admin/admin_stats.php - Fixed "Space Used" values.</li>
+<li>admin/admin_url_help.php - Fixed bug with htaccess code when SE is in a subdirectory.</li>
+<li>admin/admin_viewadmins.php - Fixed bug when deleting admin.</li>
+<li>templates/admin_ads_add.tpl - Fixed bug when uploading a banner ad, fixed timezone date bug.</li>
+<li>templates/admin_ads_edit.tpl - Fixed bug when uploading a banner ad, fixed timezone date bug.</li>
+<li>templates/profile.tpl - Posting comments didn't work when comment security code was turned off, fixed bug with "reply" link in comments.</li>
+<li>templates/search_advanced.tpl - Added online user notification for advanced search.</li>
+<li>templates/signup.tpl - Removed unnecessary smarty variable.</li>
+<li>templates/styles.css - Added online user notification for advanced search.</li>
+<li>templates/user_editprofile_settings.tpl - Fixed problem with comment privacy setting.</li>
+<li>templates/user_friends.tpl - Fixed bug with friend-suggest feature in search box.</li>
+<li>templates/user_home.tpl - Fixed status cancellation problem.</li>
+<li>include/js/status.js - Fixed status cancellation problem.</li>
+<li>include/class_actions.php - Fixed htmlspecialchars_decode problem for PHP 5 and bug with the limit for actions per user.</li>
+<li>include/class_ads.php - Fixed htmlspecialchars_decode problem for PHP 5.</li>
+<li>include/class_database.php - All queries within a called database object use the same link identifier now.</li>
+<li>include/class_upload.php - Fixed bmp upload bug.</li>
+<li>include/class_user.php - Fixed htmlspecialchars_decode problem for PHP 5, fixed date problem for certain dates before 1970.</li>
+<li>include/functions_general.php - Fixed htmlspecialchars_decode problem for PHP 5, fixed issue with comments widening pages.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$search_advanced[9] = "Online";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.00</h2>
+<br>
+The upgrade to 2.00 involves replacing all of your PHP, TPL, and CSS files. This means that you will lose any changes you have made to these files. Unfortunately there is no easy way to avoid this since we've made so many changes to the platform. If possible, make a note about each change you've made in your current installation so that you can reapply them after the upgrade process. 
+
+<br><br><br>
+
+<h2>Version 1.80</h2>
+
+<ol>
+<li>comment_post.php - Fixed problem inserting anonymous comments.</li>
+<li>header.php - Assign language variable for error.tpl</li>
+<li>home.php - Comment total didn't include profile comments</li>
+<li>signup_verify.php - $signup_verify[14]</li>
+<li>admin/admin_stats.php - Fixed MySQL queries for Quick Statistics</li>
+<li>admin/admin_viewusers_edit.php - Fixed language in manual verification</li>
+<li>admin/admin_viewusers_edit.php - Fixed display of invites after email verification resent</li>
+<li>include/functions_delete.php - Reference to old profile comments' table name</li>
+<li>include/functions_email.php - Limit to ten invites</li>
+<li>include/functions_uploads.php - changed method of guessing SE subfolder in uploadfile()</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$header[25] = "Forums";<br>
+$header[26] = "Return";<br>
+$header[27] = "Videos";<br>
+$signup_verify[14] = "Default";<br>
+$user_editprofile[14] = "Changing this field may change which Network you belong to. You currently belong to the Network";
+</blockquote>
+Modified:<br>
+<blockquote>
+$invite[3] = "Invite your friends to join! Enter the email addresses of your friends separated by commas in the field below.<br>Please enter no more than ten (10) email addresses.";<br>
+$signup[30] = "Enter your friends' email addresses below, separated by commas.<br>Please enter no more than ten (10) email addresses.";
+</blockquote>
+</li>
+<li>lang/lang_english_admin.php<br>Converted admin_stats and admin_viewusers_edit to arrays.<br>
+<blockquote>
+$admin_stats[1] = "Network Statistics";<br>
+$admin_stats[2] = "Use this page to monitor network usage and traffic patterns. Begin by selecting one of the types of available statistics below.";<br>
+$admin_stats[3] = "Network Usage";<br>
+$admin_stats[4] = "Quick Summary";<br>
+$admin_stats[5] = "Visits/Impressions";<br>
+$admin_stats[6] = "New Logins";<br>
+$admin_stats[7] = "New Signups";<br>
+$admin_stats[8] = "New Groups";<br>
+$admin_stats[9] = "New Blog Entries";<br>
+$admin_stats[10] = "New Albums";<br>
+$admin_stats[11] = "New Friendships";<br>
+$admin_stats[12] = "Referring URLs";<br>
+$admin_stats[13] = "Space Used";<br>
+$admin_stats[14] = "This Week";<br>
+$admin_stats[15] = "This Month";<br>
+$admin_stats[16] = "This Year";<br>
+$admin_stats[17] = "Daily";<br>
+$admin_stats[18] = "Monthly";<br>
+$admin_stats[19] = "Refresh";<br>
+$admin_stats[20] = "These are the 100 most common referring URLs tracked from your <a href='../home.php' target='_blank'>home.php</a> file.<br>This indicates that most new traffic is coming from the following URLs.<br>Clearing the list periodically will give you fresh referrer data.";<br>
+$admin_stats[21] = "clear now";<br>
+$admin_stats[22] = "Hits";<br>
+$admin_stats[23] = "Url";<br>
+$admin_stats[24] = "The referrer URL list is currently empty.";<br>
+$admin_stats[25] = "Uploaded Media:";<br>
+$admin_stats[26] = "Database Size:";<br>
+$admin_stats[27] = "Total Space Used (Estimated):";<br>
+$admin_stats[28] = "MB";<br>
+$admin_stats[29] = "Quick Network Statistics";<br>
+$admin_stats[30] = "The following data is a quick snapshot of your social network.<br>The data does not include any items that have been deleted.";<br>
+$admin_stats[31] = "Total Users";<br>
+$admin_stats[32] = "Total Blog Entries";<br>
+$admin_stats[33] = "Total Albums";<br>
+$admin_stats[34] = "Total Groups";<br>
+$admin_stats[35] = "Total Uploaded Files";<br>
+$admin_stats[36] = "Total Private Messages";<br>
+$admin_stats[37] = "Total Comments";<br>
+$admin_stats[38] = "users";<br>
+$admin_stats[39] = "entries";<br>
+$admin_stats[40] = "albums";<br>
+$admin_stats[41] = "groups";<br>
+$admin_stats[42] = "files";<br>
+$admin_stats[43] = "messages";<br>
+$admin_stats[44] = "comments";<br>
+$admin_viewusers_edit[33] = "manually verify";
+</blockquote>
+</li>
+<li>templates/admin_stats.tpl - Checked entry counts to make sure they are set (plugin installed)</li>
+<li>templates/error.tpl - Return button language</li>
+<li>templates/styles.css - Added style for private blogs in blog_category</li>
+<li>templates/user_editprofile.php - Language removal for subnetwork message</li>
+<li>templates/user_editprofile_comments.tpl - photosize() on avatars</li>
+</ol>
+
+
+<br><br>
+
+
+<h2>Version 1.70</h2>
+
+<ol>
+<li>comment_post.php - Words now censor in comments.</li>
+<li>header.php - Unregistered users are now forwarded to the login page instead of the homepage.</li>
+<li>profile.php - Private profiles now display avatar and user options (such as "Add to Friends").</li>
+<li>login.php - A URL can now be specified that the user will be directed to after logging in.</li>
+<li>signup.php - Words now censor in profile fields.</li>
+<li>user_editprofile.php - Words now censor in dependent fields.</li>
+<li>user_friends_add.php - Words now censor in friendship type and explanation.</li>
+<li>user_friends_confirm.php - Words now censor in friendship type and explanation.</li>
+<li>include/functions_datetime.php - Removed extraneous function.</li>
+<li>include/functions_smarty.php - Added function to list of functions.</li>
+<li>include/functions_stats.php - Added ending php tag.</li>
+<li>include/version.php - Version incremented.</li>
+<li>templates/login.tpl - A URL can now be specified that the user will be directed to after logging in.</li>
+<li>templates/profile.tpl - Private profiles now display avatar and user options (such as "Add to Friends").</li>
+<li>templates/search.tpl - Fixed bug with multiple search pages and specified search pages.</li>
+<li>templates/user_friends.tpl - Made search box always display.</li>
+<li>templates/user_friends_confirm.tpl - Fixed bug when switching friendship type from "Other" to something else.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$profile[3] = "Private Profile";<br>
+$profile[4] = "You do not have permission to view this profile.";
+</blockquote>
+</li>
+</ol>
+
+
+<br><br>
+
+<h2>Version 1.60</h2>
+
+<ol>
+<li>profile.php - Added ability for invisible profile fields, empty select box option now works properly, select/radio fields now link properly, line breaks as well as commas now prompt a new link for linked textareas.</li>
+<li>user_editprofile.php - Words now censor in user profile fields, line breaks now register properly in textareas.</li>
+<li>search.php - Fixed duplicate variable issue by changing search field name.</li>
+<li>signup.php - Added protection against directory listing in uploads_user/ directory.</li>
+<li>user_logout.php - Made user email cookie persistent.</li>
+<li>search_advanced.php - Fixed minor search bug.</li>
+<li>comment_post.php - Line breaks now register properly.</li>
+<li>include/version.php - Version incremented.</li>
+<li>include/functions_general.php - Added functions to censor words, line breaks as well as commas now prompt a new link for linked textareas.</li>
+<li>include/fckeditor/fckconfig.js - Smilies now work when SE is installed in a subdirectory.</li>
+<li>templates/search.tpl - Fixed duplicate variable issue by changing search field name.</li>
+<li>templates/header.tpl - Fixed duplicate variable issue by changing search field name.</li>
+<li>templates/browse_friends.tpl - Fixed photo dimension problem.</li>
+<li>templates/comment_viewall.tpl - Fixed photo dimension problem.</li>
+<li>templates/admin_profile_addfield.tpl - Added ability for invisible profile fields.</li>
+<li>templates/admin_profile_editfield.tpl - Added ability for invisible profile fields.</li>
+<li>templates/signup.tpl - Empty select box option now works properly.</li>
+<li>templates/user_editprofile.tpl - Empty select box option now works properly.</li>
+<li>templates/profile.tpl - Blog entry links now go to individual blog entires instead of to the user's blog.</li>
+<li>admin/admin_profile_addtab.php - Fixed tab order bug.</li>
+<li>admin/admin_profile_addfield.php - Added ability for invisible profile fields, Fixed field order bug.</li>
+<li>admin/admin_profile_editfield.php - Added ability for invisible profile fields.</li>
+<li>admin/admin_stats.php - Fixed MySQL error and added group media to "Space Used".</li>
+<li>admin/admin_loginasuser.php - Minor backend bug.</li>
+<li>admin/admin_url_help.php - Problem with htaccess when subdirectory style URLs are on and albums have more than one page.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$help[26] = "If the administrator has enabled it, you can make your profile private by visiting the <a href='user_editprofile_privacy.php'>Profile Privacy</a> page.";
+</blockquote>
+</li>
+<li>lang/lang_english_admin.php<br>
+<blockquote>
+$admin_banning9 = "Censored Words on Profiles, Albums, Blogs, and Groups";<br>
+$admin_banning10 = "Enter any words that you you want to censor on your users' profiles, albums, blogs, and groups. These will be replaced with asterisks (*). Separate words by commas like &lt;i&gt;word1, word2&lt;/i&gt;";<br>
+$admin_profile_addfield30 = "Searchable/Linked:";<br>
+$admin_profile_addfield31 = "Searchable, Linked on Profile";<br>
+$admin_profile_addfield32 = "Searchable";<br>
+$admin_profile_addfield33 = "Not Searchable";<br>	
+$admin_profile_addfield40 = "If you want this field to link to another URL, enter the link format above. Note that&lt;br&gt; this will override the \"Searchable/Linked\" setting above. Use [field_value] to represent&lt;br&gt; the user's input for this field. Examples:&lt;br&gt;&lt;i&gt;Regular link (if user's input is a URL - must begin with \"http://\"):&lt;/i&gt; &lt;strong&gt;[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;Mailto link (if user's input is an email address):&lt;/i&gt; &lt;strong&gt;mailto:[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;AIM Link (if user's input is an AIM screenname):&lt;/i&gt; &lt;strong&gt;aim:goim?screenname=[field_value]&lt;/strong&gt;";<br>
+$admin_profile_addfield41 = "Not Searchable, Not Visible on Profile";<br>
+$admin_profile_editfield30 = "Searchable/Linked:";<br>
+$admin_profile_editfield31 = "Searchable, Linked on Profile";<br>
+$admin_profile_editfield32 = "Searchable";<br>
+$admin_profile_editfield33 = "Not Searchable";<br>	
+$admin_profile_editfield43 = "If you want this field to link to another URL, enter the link format above. Note that&lt;br&gt; this will override the \"Searchable/Linked\" setting above. Use [field_value] to represent&lt;br&gt; the user's input for this field. Examples:&lt;br&gt;&lt;i&gt;Regular link (if user's input is a URL - must begin with \"http://\"):&lt;/i&gt; &lt;strong&gt;[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;Mailto link (if user's input is an email address):&lt;/i&gt; &lt;strong&gt;mailto:[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;AIM Link (if user's input is an AIM screenname):&lt;/i&gt; &lt;strong&gt;aim:goim?screenname=[field_value]&lt;/strong&gt;";<br>
+$admin_profile_editfield44 = "Not Searchable, Not Visible on Profile";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.50</h2>
+
+<ol>
+<li>Fixed ASCII character conversion in Recent News. (home.php, user_home.php)</li>
+<li>Friendships must now be confirmed before messages can be sent if messages can only be sent to friends. (user_messages_new.php)</li>
+<li>Added manual email verification. (admin_viewusers_edit.php, templates/admin_viewusers_edit.tpl)</li>
+<li>Added a "Remember Me" button (login.php, user_logout.php, templates/login.tpl, templates/home.tpl)</li>
+<li>Took out "Wall Posts", added "Profile Comments" to "Total Comments". (admin_home.php, templates/admin_home.tpl)</li>
+<li>.htaccess file was incorrect when SE was in a subdirectory. (admin_url_help.php)</li>
+<li>Fixed signup problems for Windows servers. (signup.php)</li>
+<li>Fixed advanced search problems and profile field link browsing. (search_advanced.php)</li>
+<li>Fixed date field server-dependent problem. (signup.php, user_editprofile.php, profile.php)</li>
+<li>Fixed photo dimension problem. (include/functions_smarty.php, templates/home.tpl, templates/user_messages.tpl, templates/user_messages_view.tpl, templates/user_messages_outbox.tpl, templates/user_friends.tpl, templates/user_friends_requests.tpl, templates/profile.tpl, templates/search_advanced.tpl)</li>
+<li>Fixed error message when user tries to add a user from whom they are waiting for confirmation. (user_friends_add.php)</li>
+<li>Created a method for URLs in profile fields to link to a custom hyperlink instead of the browse page. (admin/admin_profile_addfield.php, templates/admin_profile_addfield.tpl, admin/admin_profile_editfield.php, templates/admin_profile_editfield.tpl, admin/admin_profile_editdepfield.php, templates/admin_profile_editdepfield.tpl, profile.php, include/functions_general.php)</li>
+<li>Added blank select option for select box profile fields. (include/js/showhide.js, templates/signup.tpl, templates/user_editprofile.tpl)</li>
+<li>Fixed Subnetworks. (admin/admin_subnetworks.php, admin/admin_subnetworks_add.php, templates/admin_subnetworks_add.tpl, admin/admin_subnetworks_edit.php, templates/admin_subnetworks_edit.tpl, include/functions_general.php, signup.php)</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$header[20] = "Social Network";<br>
+$header[21] = "Social Network - My Account";<br>
+$user_friends_add[20] = "You have already sent a friend request to this user. They must confirm the friendship before you can become friends.";
+</blockquote>
+</li>
+<li>lang/lang_english_admin.php<br>
+<blockquote>
+$admin_profile_addfield39 = "Link Field To:";<br>
+$admin_profile_addfield40 = "If you want this field to link to another URL, enter the link format above. Note that&lt;br&gt; this will override the \"Browsable/Linked\" setting above. Use [field_value] to represent&lt;br&gt; the user's input for this field. Examples:&lt;br&gt;&lt;i&gt;Regular link (if user's input is a URL):&lt;/i&gt; &lt;strong&gt;[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;Mailto link (if user's input is an email address):&lt;/i&gt; &lt;strong&gt;mailto:[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;AIM Link (if user's input is an AIM screenname):&lt;/i&gt; &lt;strong&gt;aim:goim?screenname=[field_value]&lt;/strong&gt;";<br>
+$admin_profile_editdepfield5 = "Link Field To:";<br>
+$admin_profile_editdepfield6 = "If you want this field to link to another URL, enter the link format above.&lt;br&gt; Use [field_value] to represent the user's input for this field. Examples:&lt;br&gt;&lt;i&gt;Regular link (if user's input is a URL):&lt;/i&gt; &lt;strong&gt;[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;Mailto link (if user's input is an email address):&lt;/i&gt; &lt;strong&gt;mailto:[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;AIM Link (if user's input is an AIM screenname):&lt;/i&gt; &lt;strong&gt;aim:goim?screenname=[field_value]&lt;/strong&gt;";<br>
+$admin_profile_editfield42 = "Link Field To:";<br>
+$admin_profile_editfield43 = "If you want this field to link to another URL, enter the link format above. Note that&lt;br&gt; this will override the \"Browsable/Linked\" setting above. Use [field_value] to represent&lt;br&gt; the user's input for this field. Examples:&lt;br&gt;&lt;i&gt;Regular link (if user's input is a URL):&lt;/i&gt; &lt;strong&gt;[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;Mailto link (if user's input is an email address):&lt;/i&gt; &lt;strong&gt;mailto:[field_value]&lt;/strong&gt;&lt;br&gt;&lt;i&gt;AIM Link (if user's input is an AIM screenname):&lt;/i&gt; &lt;strong&gt;aim:goim?screenname=[field_value]&lt;/strong&gt;";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.40</h2>
+
+<ol>
+<li>profile.php - Minor bug with the way birthdays were being displayed.</li>
+<li>user_editprofile.php - Minor date field bug.</li>
+<li>signup.php - Minor date field bug, user privacy defaults set.</li>
+<li>header.php - Minor bug regarding the reporting function.</li>
+<li>user_report.php - When user who was not logged in tried to submit a report, they were being forwarded to the home page.</li>
+<li>comment_post.php - Comment security image was not displaying.</li>
+<li>images/icons/album16.gif - New icon added</li>
+<li>include/smarty/smarty_config.php - Minor bug in smarty engine for higher versions of PHP</li>
+<li>include/version.php - Version updated.</li>
+<li>templates/comment_post.tpl - Comment security image was not displaying.</li>
+<li>templates/browse_friends.tpl - Minor bug with next/last page links.</li>
+<li>templates/admin_connections.tpl - Adding new friendship types was not functioning.</li>
+<li>admin_url_help.php - When SE was installed in a subdirectory, subdirectory style URLs were not working.</li>
+<li>admin/admin_templates_edit.php - Characters with "&" were being stripped upon saving.</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$user_report[11] = "An Error Has Occurred";<br>
+$user_report[12] = "You must be logged in to perform this action.";<br>
+$comment_post[8] = "Please make sure you have correctly entered the verification code.";<br>
+$comment_post[9] = "Security Code:";<br>
+$comment_post[10] = "Enter the numbers you see in this image into the field to its left. This helps keep our social network free of spam.";
+</blockquote>
+</li>
+</ol>
+
+
+<br><br>
+
+<h2>Version 1.30</h2>
+
+<ol>
+<li>comment_post.php</li>
+<li>home.php</li>
+<li>invite.php</li>
+<li>profile.php</li>
+<li>search.php</li>
+<li>search_advanced.php</li>
+<li>templates/admin_general.tpl</li>
+<li>include/functions_general.php</li>
+<li>include/functions_smarty.php</li>
+<li>include/version.php</li>
+<li>admin/admin_general.php</li>
+<li>admin/admin_header.php</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$home[40] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$home[41] = "An Error Has Occurred.";<br>
+$invite[12] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$invite[13] = "An Error Has Occurred.";<br>
+$profile[40] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$search[26] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$search[27] = "An Error Has Occurred.";<br>
+$search_advanced[19] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$search_advanced[20] = "An Error Has Occurred.";
+</blockquote>
+<li>lang/lang_english_admin.php<br>
+<blockquote>
+$admin_general23 = "Invite Page";<br>
+$admin_general24 = "Yes, the public can use the invite page.";<br>
+$admin_general25 = "No, the public cannot use the invite page.";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.20</h2>
+
+<ol>
+<li>header.php</li>
+<li>user_account.php</li>
+<li>user_messages_new.php</li>
+<li>include/functions_general.php</li>
+<li>templates/admin_profile_addfield.tpl</li>
+<li>templates/admin_profile_editfield.tpl</li>
+<li>templates/home.tpl</li>
+<li>templates/profile.tpl</li>
+<li>templates/user_account.tpl</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$user_messages_new[15] = "You are not friends with the user you are trying to send a message to. You can only send private messages to friends.";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.10</h2>
+
+<ol>
+<li>profile.php</li>
+<li>signup.php</li>
+<li>signup_verify.php</li>
+<li>user_account.php</li>
+<li>templates/user_home.tpl</li>
+<li>include/functions_email.php</li>
+<li>admin/admin_stats.php</li>
+<li>admin/admin_viewusers_edit.php</li>
+<li>lang/lang_english.php<br>
+<blockquote>
+$signup[63] = "Please ensure your username is alphanumeric.";<br>
+$user_account[37] = "Please ensure your username is alphanumeric.";
+</blockquote>
+</li>
+</ol>
+
+
+<br>
+�2007 Webligo Developments
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,1021 @@
+Country, Country Code, Network, Outbound Message Costs
+Afghanistan,93,,
+,,Areeba,0.8
+,,AWCC,0.8
+,,Etisalat,0.8
+,,TDCA (ROSHAN),0.8
+Albania,355,,
+,,AMC,2.5
+,,Eagle Mobile,1
+,,Vodafone,0.8
+Algeria,213,,
+,,Mobilis (AMN),0.8
+,,Orascom (Djezzy),0.8
+,,Wataniya (Nedjma),0.8
+Andorra,376,,
+,,Mobiland (STA),0.8
+Angola,244,,
+,,Unitel,0.8
+Anguilla,1264,,
+,,Cable & Wireless,0.8
+,,Digicel,0.8
+Antigua & Barbuda,1268,,
+,,APUA,0.8
+,,Cable and Wireless,0.8
+,,Digicel,0.8
+Argentina,54,,
+,,CTI Movil (AMX),0.8
+,,MiniPhone,1
+,,Nextel (iDEN),0.8
+,,Telecom Personal,0.8
+,,Telefonica Movistar (Unefon),0.8
+Armenia,374,,
+,,Armentel,0.8
+,,K Telecom CJSC (VivaCell),0.8
+,,Karabakh Telecom,0.8
+Aruba,297,,
+,,"Digicel (NMTS,Mossel)",0.8
+,,SETAR GSM,0.8
+Australia,61,,
+,,Hutchison 3G (THREE),0.8
+,,Telstra,1
+,,Virgin Mobile,0.8
+,,Vodafone,1
+,,YES Optus (Singtel),0.8
+Austria,43,,
+,,ACOTEL,1.5
+,,"Mobilkom (Telekom,A1,PTA)",1.5
+,,Orange (ONE),0.8
+,,T-Mobile Austria GmbH (Tele.Ring),1.5
+,,TRE (H3G),0.8
+Azerbaijan,994,,
+,,Azercell Telekom B.M.,0.8
+,,J.V.Bakcell GSM 2000,0.8
+"Bahamas, the",1242,,
+,,BTC Bahamas,1
+Bahrain,973,,
+,,Batelco (BHR Mobile Plus),0.8
+,,Zain (MTC Vodafone),0.8
+Bangladesh,880,,
+,,AkTel (Telecom Malaysia),0.8
+,,BanglaLink  - Sheba,0.8
+,,GrameenPhone,0.8
+,,Warid Telecom International,0.8
+Barbados,1246,,
+,,Cable and Wireless,0.8
+,,Cingular (Cellular Com),0.8
+,,Digicel,0.8
+Barbuda,?,,
+,,Dicigel,0.8
+Belarus,375,,
+,,Beltelecom,0.8
+,,Mobile Digital Comm(VELCOM),0.8
+,,MTS Belarus,0.8
+Belgium,32,,
+,,BASE (KPN Orange)(Dixitel),0.8
+,,Mobistar,1.5
+,,Proximus (Belgacom),1.5
+Belize,501,,
+,,Belize Telecom Ltd,0.8
+Benin,229,,
+,,Libercom,0.8
+,,Spacetel (Areeba),0.8
+,,Telecel Benin,0.8
+Bermuda,1441,,
+,,Cingular (Digicel),0.8
+,,Mobility (M3 Wireless),0.8
+Bhutan,975,,
+,,B-Mobile,0.8
+Bolivia,591,,
+,,Entel,0.8
+,,Nuevatel,0.8
+,,Telecel (Millicom),0.8
+Bosnia-Herzegovina,387,,
+,,BH Telecom (GSMBIH),0.8
+,,ERONET/HPT,0.8
+,,"RS Telecoms (m:tel,mobis)",0.8
+Botswana,267,,
+,,Mascom Wireless,0.8
+,,Orange (Vista),0.8
+Brazil,55,,
+,,Brasil Telecom,0.8
+,,Claro,1
+,,Nextel,3
+,,"Oi (TNL, Telemar)",0.8
+,,TIM,0.8
+,,VIVO (Movistar),1
+,,"VIVO Minas (Telemig, Amazonas)",0.8
+British Virgin Islands,1284,,
+,,Cable and Wireless,1
+,,CCT,0.8
+,,Digicel (BVI) Limited,0.8
+Brunei,673,,
+,,B-Mobile,0.8
+,,DataStream Technology (DTSCom),0.8
+Bulgaria,359,,
+,,Cosmo Bulgaria Mobile (Globul),0.8
+,,MobilTel AD,0.8
+,,VivaTel,0.8
+Burkina Faso,226,,
+,,CELTEL,0.8
+,,TELECEL,0.8
+,,TELMOB (Onatel),0.8
+Burundi,257,,
+,,Telecel,0.8
+Cambodia,855,,
+,,CAC (CADCOMMS),0.8
+,,"CamGSM (MobiTel,Tango))",0.8
+,,Camshin (Shinawatra) DCS 1800,0.8
+,,"HelloGSM (Telekom Malaysia, Casacom) GSM 900",0.8
+Cameroon,237,,
+,,MTN,0.8
+,,Orange (SCM),0.8
+Canada,1,,
+,,Alliant Telecom (Mobility),1.5
+,,Fido (Microcell),0.8
+,,Ice Wireless GSM,1.5
+,,MTS,1.5
+,,Rogers AT&T Wireless,0.8
+,,Sasktel Mobility,1.5
+,,Telus Mobility,1.5
+,,Thunder Bay,1.5
+,,Virgin Mobile,1.5
+Canary Islands,34,,
+,,Amena,1.5
+,,Movistar,1.5
+,,Vodafone,1.5
+Cape Verde,238,,
+,,CV Movel,0.8
+,,T+ Telecomunicacoes S.A.,0.8
+Cayman Islands,1345,,
+,,Cable & Wireless,0.8
+,,Cingular,0.8
+,,Digicel,0.8
+Central African Republic,236,,
+,,Atlantique Telecom Centrafrique,0.8
+,,Orange Centrafrique,0.8
+,,Telecel Centrafrique,0.8
+Chad,235,,
+,,Celtel Tchad SA,0.8
+,,Tchad Mobile (Millicom),0.8
+Chile,56,,
+,,Claro Chile SA (SmartCom),0.8
+,,Entel Movil,0.8
+,,Entel PCS,0.8
+,,Movistar (Telefónica Móvil),1.5
+China,86,,
+,,China Mobile,1.5
+,,China Telecom,1.5
+,,China Unicom,1.5
+Colombia,57,,
+,,Colombia Movil SA (Tigo),0.8
+,,Movistar,0.8
+Comoros,269,,
+,,Comores Telecom,0.8
+Congo,242,,
+,,CelTel,0.8
+,,MTN (Libertis),0.8
+"Congo, Democratic Republic",243,,
+,,Celtel,0.8
+,,Sait Telecom SPRL(Oasis),0.8
+,,Supercell,0.8
+,,Vodacom (CWN),0.8
+Cook Islands,682,,
+,,Telecom Cook Islands,0.8
+Costa Rica,506,,
+,,ICE,0.8
+Croatia,385,,
+,,"T-Mobile (HT Mobile,Cronet,Croatian Tele.)",0.8
+,,Tele2,0.8
+,,VipNet,0.8
+Cuba,53,,
+,,C-COM (Etecsa),0.8
+,,Cubacel,0.8
+Curacao,5999,,
+,,Digicel,0.8
+,,Setel,0.8
+Cyprus,357,,
+,,Areeba,0.8
+,,CYTA (Vodafone),0.8
+Czech Republic,420,,
+,,T-Mobile (Radiomobil),0.8
+,,Telefonica O2 (EuroTel),0.8
+,,Unallocated Prefixes,1.5
+,,Vodafone Czech Republic a.s. (OSKAR),0.8
+Denmark,45,,
+,,Orange (Mobilix),0.8
+,,Sonofon (Dansk Mobil Telefon),0.8
+,,TDC (Tele Denmark),1
+,,Tele2,0.8
+,,Telia (Orange),0.8
+,,Tellmore (Virtual:Tele Danmark),0.8
+,,Three (Hi3G),0.8
+Djibouti,253,,
+,,Evatis (Djibouti Telekom),0.8
+Dominica,1767,,
+,,Cable and Wireless,0.8
+,,Centennial,1.5
+,,Digicel,1
+,,Orange Caraibe,0.8
+Dominican Republic,1,,
+,,CodeTel,1
+,,Orange (France Telecom Do.),0.8
+,,TriCom,1
+East Timor,670,,
+,,Timor Telecom,1.5
+Ecuador,593,,
+,,Alegro (Telecsa),1
+,,Conecel (Porta),0.8
+,,Otecel (Movistar),0.8
+Egypt,20,,
+,,ECMS MobiNil,0.8
+,,Etisalat Misr,0.8
+,,Vodafone (Misrfone +CLICK GSM),0.8
+El Salvador,503,,
+,,CTE Telecom PERSONAL,0.8
+,,Digicel,0.8
+,,Telefonica Moviles,0.8
+,,Telemovil,0.8
+Equatorial Guinea,240,,
+,,GETESA(Orange),0.8
+Estonia,372,,
+,,EMT,1.5
+,,Radiolinja (Elisa),0.8
+,,Tele2 (Eesti),0.8
+Ethiopia,251,,
+,,ETMTN,0.8
+Falkland Islands,500,,
+,,Cable and Wireless (Touch),1.5
+Faroe Islands,298,,
+,,FaroeseTelecom,0.8
+,,Kall Telecom,0.8
+Fiji,679,,
+,,Digicel,0.8
+,,Vodafone,0.8
+Finland,358,,
+,,Alands Mobiltelefon Ab,0.8
+,,Dna Finland,0.8
+,,Elisa Corporation,1.5
+,,Saunalahti Group Oyj (Jippii),1.5
+,,TeliaSonera,1
+France,33,,
+,,Bouygues Telecom,1.5
+,,Orange,1.5
+,,SFR,1.5
+French Guiana,594,,
+,,Digicel (Bouygues Telecom),0.8
+,,Orange (France Caraibe Mobiles),0.8
+,,Outremer Telecom,0.8
+French Polynesia,689,,
+,,Tikiphone,2
+French West Indies,590,,
+,,Bouygues (Digicel),0.8
+,,Dauphin Telecom (AMIGO GSM),1
+,,Only (Outremer),0.8
+,,Orange,0.8
+Gabon,241,,
+,,Celtel,0.8
+,,Libertis,0.8
+,,Telecel,0.8
+Gambia,220,,
+,,Africell,0.8
+,,Comium Services,0.8
+,,Gamcel,1.5
+Georgia,995,,
+,,Geocell,0.8
+,,Magticom Ltd.,0.8
+,,Telecom (Mobitel),0.8
+Germany,49,,
+,,E-Plus,1.5
+,,Group 3G,0.8
+,,MobilCom,0.8
+,,"O2 (Viag, E2)",1.5
+,,"T-Mobil (D1,Detemobil)",1.5
+,,"Vodafone (D2,Man.man,Mobilfunk)",1.5
+Ghana,233,,
+,,Millicom (Tigo),0.8
+,,MTN (ScanCom),0.8
+,,Vodafone (One-touch),0.8
+,,Zain,0.8
+Gibraltar,350,,
+,,Gibtel,0.8
+Greece,30,,
+,,Cosmote,0.8
+,,Infoquest AEBE (Q-Telecom),0.8
+,,Vodafone (Panafon),0.8
+,,"Wind (Tim,Telestet,Stet Hellas)",0.8
+Greenland,299,,
+,,TELE Greenland,0.8
+Grenada,1473,,
+,,Cable & Wireless,0.8
+,,Cingular (Grenada Wireless),0.8
+,,Digicel (Mossel),0.8
+Guadeloupe,590,,
+,,Bouygues (Digicel),0.8
+,,Dauphin Telecom,1
+,,Orange (France Caraibe Mobiles),0.8
+,,Outremer Telecom,0.8
+Guam,1671,,
+,,DOCOMO PACIFIC,0.8
+,,IT&E Wireless,2
+Guatemala,502,,
+,,Comcel (CCSA),1
+,,Movistar,0.8
+Guernsey,44,,
+,,Cable & Wireless,0.8
+,,Wave Telecom,0.8
+Guinea,224,,
+,,Areeba (MTN),0.8
+,,INTERCEL Guinée (Telecel Guinee),1.5
+,,Orange (Spacetel),0.8
+,,Sotelgui,1
+Guyana,592,,
+,,"Digicel (Umobile, Celstar)",0.8
+,,Telephone & Telegraph Co,0.8
+Haiti,509,,
+,,Comcel,0.8
+,,Digicel,0.8
+Honduras,504,,
+,,Celtel (Millicom),0.8
+,,Sercom (Claro),0.8
+HongKong,852,,
+,,CSL,0.8
+,,Hong Kong Telecommunications (HKT) Limited (PCCW),0.8
+,,Hutchison (CDMA),0.8
+,,Hutchison (Orange 2G),0.8
+,,Hutchison 3G,0.8
+,,New World PCS,0.8
+,,Peoples,0.8
+,,SmarTone,0.8
+Hungary,36,,
+,,Magyar Telekom (T-Mobile),0.8
+,,Pannon GSM,0.8
+,,Vodafone (V.R.A.M Tele.),1.5
+Iceland,354,,
+,,Landssimi (Siminn),0.8
+,,Nova,0.8
+,,Og Vodafone (Islandssimi),0.8
+,,TAL,0.8
+,,Viking Wireless(IMC),0.8
+India,91,,
+,,Aircel - Tamil Nadu,0.8
+,,Aircel Cellular - Chennai,0.8
+,,Aircel Digilink - Haryana,0.8
+,,Aircel Digilink - Rajasthan,0.8
+,,Aircel Digilink - Uttar Pradesh East,0.8
+,,Bharti Airtel - Andhra Pradesh,0.8
+,,Bharti Airtel - Assam,0.8
+,,Bharti Airtel - Bihar & Jharkhand,0.8
+,,Bharti Airtel - Chennai,0.8
+,,Bharti Airtel - Delhi,0.8
+,,Bharti Airtel - Gujarat,0.8
+,,Bharti Airtel - Haryana,0.8
+,,Bharti Airtel - Himachal Pradesh,0.8
+,,Bharti Airtel - Jammu & Kashmir,0.8
+,,Bharti Airtel - Karnataka,0.8
+,,Bharti Airtel - Kerala,0.8
+,,Bharti Airtel - Kolkata,0.8
+,,Bharti Airtel - Madhya Pradesh,0.8
+,,Bharti Airtel - Maharashtra,0.8
+,,Bharti Airtel - Mumbai,0.8
+,,Bharti Airtel - North East India,0.8
+,,Bharti Airtel - Orissa,0.8
+,,Bharti Airtel - Punjab,0.8
+,,Bharti Airtel - Rajasthan,0.8
+,,Bharti Airtel - TamilNadu,0.8
+,,Bharti Airtel - Uttar Pradesh East,0.8
+,,Bharti Airtel - Uttar Pradesh West,0.8
+,,Bharti Airtel - West Bengal An.Ni.,0.8
+,,BPL Cellular - Kerala,0.8
+,,BPL Cellular - Maharashtra,0.8
+,,BPL Cellular - TamilNadu,0.8
+,,BPL Mobile - Mumbai,0.8
+,,BSNL - Andhra Pradesh,0.8
+,,BSNL - Assam,0.8
+,,BSNL - Bihar & Jharkhand,0.8
+,,BSNL - Chennai,0.8
+,,BSNL - Gujarat,0.8
+,,BSNL - Haryana,0.8
+,,BSNL - Himachal Pradesh,0.8
+,,BSNL - Jammu & Kashmir,0.8
+,,BSNL - Karnataka,0.8
+,,BSNL - Kerala,0.8
+,,BSNL - Kolkata,0.8
+,,BSNL - Madhya Pradesh,0.8
+,,BSNL - Maharashtra,0.8
+,,BSNL - North East India,0.8
+,,BSNL - Orissa,0.8
+,,BSNL - Punjab,0.8
+,,BSNL - Rajastan,0.8
+,,BSNL - TamilNadu,0.8
+,,BSNL - Uttar Pradesh East,0.8
+,,BSNL - Uttar Pradesh West,0.8
+,,BSNL - West Bengal An.Ni.,0.8
+,,Communications - Mumbai,0.8
+,,Dishnet Wireless Ltd. - Assam,0.8
+,,Dishnet Wireless Ltd. - Bihar & Jharkhand,0.8
+,,Dishnet Wireless Ltd. - Himachal Pradesh,0.8
+,,Dishnet Wireless Ltd. - Jammu & Kashmir,0.8
+,,Dishnet Wireless Ltd. - North East India,0.8
+,,Dishnet Wireless Ltd. - Orissa,0.8
+,,Dishnet Wireless Ltd. - West Bengal An.Ni.,0.8
+,,Escorts Coms - Himachal Pradesh,0.8
+,,Escorts Coms - Rajasthan,0.8
+,,Escorts Coms - Uttar Pradesh East,0.8
+,,Fascel - Gujarat,0.8
+,,Hutchison Essar - Andhra Pradesh,0.8
+,,Hutchison Essar - Chennai,0.8
+,,Hutchison Essar - Delhi,0.8
+,,Hutchison Essar - Karnataka,0.8
+,,Hutchison Essar - Mumbai,0.8
+,,Hutchison Essar - Punjab,0.8
+,,Hutchison Essar - Uttar Pradesh West,0.8
+,,Hutchison Telecom - Kolkata,0.8
+,,Hutchison Telecom - West Bengal An.Ni.,0.8
+,,Idea Cellular - Andhra Pradesh,0.8
+,,Idea Cellular - Delhi,0.8
+,,Idea Cellular - Gujarat,0.8
+,,Idea Cellular - Madhya Pradesh,0.8
+,,Idea Cellular - Maharashta,0.8
+,,Idea Cellular - Uttar Pradesh West,0.8
+,,Idea Mobile Communications - Haryana,0.8
+,,Idea Mobile Communications - Kerala,0.8
+,,MTNL - Delhi,0.8
+,,MTNL - Mumbai,0.8
+,,Reliance Internet Serv - Kolkata (CDMA),0.8
+,,Reliance Telecom - Assam (CDMA),0.8
+,,Reliance Telecom - Bihar & J(CDMA),0.8
+,,Reliance Telecom - Himachal Pradesh (CDMA),0.8
+,,Reliance Telecom - Madhya Pradesh (CDMA),0.8
+,,Reliance Telecom - North East (CDMA),0.8
+,,Reliance Telecom - Orissa (CDMA),0.8
+,,Reliance Telecom - West Bengal An.Ni. (CDMA),0.8
+,,Spice Communications - Karnataka,0.8
+,,Spice Communications - Punjab,0.8
+,,Tata Teleservices (CDMA),0.8
+,,Unallocated Prefixes,0.8
+Indonesia,62,,
+,,ExcelCom,0.8
+,,Hutchison CPT (Three),0.8
+,,PT Indosat,0.8
+,,PT Natrindo (Axis),0.8
+,,TelkomSel,0.8
+Iran,98,,
+,,KFZO (TKC),0.8
+,,MCI,0.8
+,,MTCE (ITC),3
+,,MTN (IranCell),1
+,,"RIC (Coop,Taliya)",0.8
+Iraq,964,,
+,,AsiaCell,0.8
+,,Korek Telecom,0.8
+,,MobiTel,1.5
+,,Zain,0.8
+Ireland,353,,
+,,Eircell (Vodafone),0.8
+,,Hutchinson 3G,0.8
+,,Meteor,0.8
+,,"O2 (Esat Digifone, Tesco)",0.8
+Isle of Man,44,,
+,,Cable & Wireless,0.8
+,,"O2 (Manx,Pronto)",0.8
+Israel,972,,
+,,Cellcom Israel Ltd,0.8
+,,Mirs Comm,0.8
+,,Orange (Partner),0.8
+,,Pelephone Communications Ltd,0.8
+Italy,39,,
+,,TIM,1.5
+,,TRE (H3G),0.8
+,,Vodafone (Omnitel),1.5
+,,WIND (BLU),1.5
+Ivory Coast,225,,
+,,Atlantique Cellulaire (Moov),0.8
+,,Comium Ivory Coast Inc (KoZ),2.5
+,,"MTN (Telecel, Loteny)",0.8
+,,"Orange (SIM,Ivoiris)",0.8
+Jamaica,1876,,
+,,Cable & Wireless,0.8
+,,Mossel (Digicel),0.8
+,,Oceanic,1.5
+Japan,81,,
+,,KDDI,0.8
+,,NTT DoCoMo,2.5
+,,Softbank,0.8
+,,Softbank (Vodafone),0.8
+Jersey,44,,
+,,Jersey Telecoms,0.8
+Jordan,962,,
+,,Jordan Mobile Telephone (Zain),0.8
+,,MobileCom (Petra),0.8
+,,Umniah,0.8
+,,XPress,0.8
+Kazakhstan,7,,
+,,KarTel (K-Mobile),0.8
+,,KCell,0.8
+,,Mobile Telecom Service,1
+Kenya,254,,
+,,Celtel (KenCell) (Zain),0.8
+,,Safaricom,0.8
+,,Telkom (CDMA),1
+Korea (South),82,,
+,,KT Freetel,1
+,,LG Telecom,1
+,,SK Telecom (+Shinsegi),0.8
+Kuwait,965,,
+,,VIVA,2.5
+,,Wataniya Telecom,0.8
+,,Zain (MTC),2
+Kyrgyzstan,996,,
+,,BiMoCom Ltd (MEGACOM),0.8
+,,Bitel(Sky mobile),0.8
+Lao,856,,
+,,Enterprise of Telecommunications Lao (ETL MOBILE),0.8
+,,Milicom (Tigo),0.8
+Latvia,371,,
+,,Latvian Mobile Telephone (LMT),0.8
+,,SIA Bite Latvija,0.8
+,,Tele2 (Baltkom),0.8
+,,Telekom Baltija (Triatel),0.8
+Lebanon,961,,
+,,"Alfa (Cellis,FTML)",0.8
+,,MTC Touch (LibanCell),0.8
+Lesotho,266,,
+,,Econet,1
+,,Vodacom Lesotho (Pty) Ltd,1
+Liberia,231,,
+,,Atlantique Wireless,1.5
+,,Cellcom,0.8
+,,Comium,0.8
+,,Lonestar Communications Corp.,1.5
+Libya,218,,
+,,El Madar,0.8
+,,Lybiana Mobile Phone,0.8
+Liechtenstein,423,,
+,,Mobilkom LIE AG,0.8
+,,Orange (VIAG EuroPlatform),0.8
+,,"Swisscom (Telecom FL,Comfone)",0.8
+,,Tele2 AG (Tango),0.8
+Lithuania,370,,
+,,Bite GSM (UAB),0.8
+,,Omnitel GSM,0.8
+,,Tele2,0.8
+Luxembourg,352,,
+,,Millicom SA,0.8
+,,P&T LuxGSM (EPT),0.8
+,,Tango (Millicom),0.8
+,,VOX,0.8
+Macau,853,,
+,,CTM (Telemovel),0.8
+,,Hutchison MAC,0.8
+,,SmarTone,0.8
+Macedonia,389,,
+,,Cosmofon,0.8
+,,T-Mobile (Mobimak),0.8
+,,VIP,0.8
+Madagascar,261,,
+,,Celtel (Madacom),0.8
+,,"Orange (Antaris,SMM)",0.8
+,,Telma Mobile,0.8
+Malawi,265,,
+,,CELTEL,0.8
+,,Telekom Networks (Callpoint),0.8
+Malaysia,60,,
+,,Celcom (TMTouch),0.8
+,,Digi,0.8
+,,"Maxis (Binariang, Timecel)",0.8
+,,U-Mobile,0.8
+Maldives,960,,
+,,Dhiraagu,0.8
+,,Wataniya Telecom (WMobile),0.8
+Mali,223,,
+,,Malitel-SA,0.8
+,,Orange (Ikatel),0.8
+Malta,356,,
+,,Go Mobile,0.8
+,,Melita Mobile Ltd. (3G Telecoms),0.8
+,,Vodafone Malta Ltd,0.8
+Martinique,596,,
+,,Digicel (Bouygues),0.8
+,,Orange (France Caraibe Mobiles),0.8
+,,Outremer Telecom,1
+Mauritania,222,,
+,,Mattel,0.8
+,,Mauritel Mobiles,0.8
+Mauritius,230,,
+,,Cellplus,0.8
+,,Emtel,0.8
+Mayotte Island (Comoros),269,,
+,,SRR Mayotte,1
+Mexico,52,,
+,,Iusacel (Unefon),1.5
+,,Nextel,1.5
+,,Telcel (RadioMovil Dipsa GSM),1.5
+,,Telefonica Movistar (Pegaso GSM),1
+Moldova,373,,
+,,MoldCell,0.8
+,,Orange (VoxTel),0.8
+Monaco (Kosovo),377,,
+,,Monaco Telecom,0.8
+,,Orange,3
+,,SFR,3
+Mongolia,976,,
+,,MobiCom,0.8
+Montenegro,382,,
+,,MTEL,0.8
+,,T-Mobile,0.8
+,,Telenor (ProMonte),0.8
+Montserrat,1664,,
+,,Cable and Wireless,0.8
+Morocco,212,,
+,,Maroc Telecom (Itissallat al Maghrib),0.8
+,,Medi Telecom,0.8
+Mozambique,258,,
+,,"mCel (Moz Cellulcar,TDM)",0.8
+,,Vodacom,0.8
+Myanmar,95,,
+,,Myanmar P&T GSM,1.5
+Namibia,264,,
+,,Cell One (Powercom),1
+,,MTC,1
+,,Telekom Namibia (CDMA),1
+Nepal,977,,
+,,Door Sancha (Nepal Telecom),0.8
+,,Mero Mobile,1
+Netherlands,31,,
+,,KPN Mobile The Netherlands B.V.,1.5
+,,Orange Nederland N.V.,1.5
+,,T-Mobile Netherlands B.V.,1.5
+,,Tele2 (Netherlands) B.V.,0.8
+,,Telfort (O2),1.5
+,,Vodafone (Libertel),1.5
+Netherlands Antilles,599,,
+,,Digicel Mossel (Curacao Telecom N.V.),0.8
+,,Setel (UTS),0.8
+,,TelCell (St Maarten),0.8
+New Caledonia,687,,
+,,OPT (Mobilis),2.5
+New Zealand,64,,
+,,Telecom New Zealand,0.8
+,,Telstra New Zealand,0.8
+,,Vodafone (BellSouth),0.8
+Nicaragua,505,,
+,,Enitel Movil,0.8
+,,Telefonica Moviles (Movistar),0.8
+Niger,227,,
+,,Celtel,0.8
+,,Telecel,1
+Nigeria,234,,
+,,Globacom Ltd. (Glo Mobile),0.8
+,,MTN,0.8
+,,Starcomms (CDMA),1.5
+,,Visafone,1.5
+,,Zain (Celtel / V-Mobile),0.8
+Norway,47,,
+,,Automobil Invest AS (Network Norway),0.8
+,,Maritime Communications Partner AS (MCP),0.8
+,,Mobyson AS,0.8
+,,MTU T3 Lisens,0.8
+,,NetCom,0.8
+,,Tele2 Norge AS,0.8
+,,Telenor Mobil AS,0.8
+,,Ventelo Norge AS,0.8
+Oman,968,,
+,,Omantel,0.8
+,,Qatari (NAWRAS),0.8
+Pakistan,92,,
+,,CMPak Limited (ZONG),0.8
+,,Mobilink,0.8
+,,Telenor,0.8
+,,UFone (PAKTEL),0.8
+,,Warid Telecom,0.8
+Palestine (+970),970,,
+,,Palestine Cellular (Jawwal),0.8
+Palestine (+9725),9725,,
+,,Palestine Cellular (Jawwal),0.8
+Panama,507,,
+,,Cable & Wireless,0.8
+,,Movistar,0.8
+Papua New Guinea,675,,
+,,Digicel,1
+,,Telikom PNG Limited (Bee Mobile),0.8
+Paraguay,595,,
+,,CTI Movil (AMX),0.8
+,,Hola Paraguay (VOX),0.8
+,,Núcleo S.A. (Personal),0.8
+,,Telefonica Celular (Telecel),0.8
+Peru,51,,
+,,América Móvil Perú (Claro),0.8
+,,Nextel,0.8
+,,Telefonica Movistar,1
+Philippines,63,,
+,,Digital (Sun Cellular),0.8
+,,Globe Telecom,0.8
+,,Islacom,0.8
+,,Nextel Communications,0.8
+,,PLDT,0.8
+,,Smart Communications,0.8
+Poland,48,,
+,,"Era (Polska, Heyah)",0.8
+,,mBank Mobile (MVNO:PlusGSM),0.8
+,,MyAvon (MVNO:Orange),0.8
+,,"Orange (Idea, PTK Centertel)",2
+,,Play (P4),0.8
+,,"PlusGSM (PolKomTel, SamiSwoi)",2
+,,WPmobi (MVNO:Orange),0.8
+Portugal,351,,
+,,OniWay,1.5
+,,Sonaecom (Optimus),1.5
+,,TMN,1.5
+,,Vodafone (Telecel),1.5
+Puerto Rico,1,,
+,,AT&T (Cingular),0.8
+,,Centennial,0.8
+,,Sprint,0.8
+,,Suncom Triton PCS,0.8
+,,Telefonica Movistar,1.5
+,,Verizon Wireless,0.8
+Qatar,974,,
+,,Qatar Telecom (Q-Tel),0.8
+Reunion,262,,
+,,Orange (France Telecom),0.8
+,,Outremer Telecom,0.8
+,,Societe Reun Dradiotel (SFR),1
+Romania,40,,
+,,Cosmote (Cosmorom),0.8
+,,"Orange (Dialog, Mobil Rom)",1.5
+,,"Vodafone Romania S.A. (MobiFon, Connex)",0.8
+,,Zapp (Telemobil),2
+Russia,7,,
+,,Amurskaja Sotovaja Svjaz,1
+,,BaykalWestCom,0.8
+,,BM-Telecom,1.5
+,,Dontelecom,0.8
+,,Ermak RMS,0.8
+,,Far East Cellular Systems,0.8
+,,KB Impuls (Beeline),0.8
+,,Kuban,0.8
+,,"MegaFon (North-West,JSC,Sonic Duo)",0.8
+,,Mobicom- Kavkaz,0.8
+,,Mobile Communications Systems,0.8
+,,Mobile TeleSystems,0.8
+,,New telephone company,0.8
+,,Nizhegorodskaya Cellular Communications,0.8
+,,Prim Telephon,0.8
+,,ReCom,0.8
+,,Siberia Cellular Systems,1
+,,Sibintertelecom,2.5
+,,SMARTS (Zao),0.8
+,,SMARTS IVANOVO,2.5
+,,Sonic Duo,1
+,,TAIF-Telecom,1
+,,Tambov Electrosvyaz,1
+,,Tele2,0.8
+,,TELECOM-XX1,0.8
+,,Telesot Alania,1
+,,Tomskaya Cellular System,1
+,,Uralsviazinform,0.8
+,,Uraltel Ltd,0.8
+,,Vimpelcom,0.8
+,,Yenisey Telecom,0.8
+Rwanda,250,,
+,,Rwandacell (MTN),0.8
+,,RWANDATEL S.A.,0.8
+Saipan,1670,,
+,,GuamCel,1.5
+Samoa (American),1684,,
+,,Digicel,0.8
+,,SamoaTel,0.8
+Samoa (Western),685,,
+,,Digicel,0.8
+San Marino,378,,
+,,San Marino Telecom,2.5
+Saudi Arabia,966,,
+,,Etihad Etisalat (Mobily),0.8
+,,"Saudi Telecom (STC, Al Jawal)",0.8
+,,Zain (MTC),0.8
+Senegal,221,,
+,,Orange (Sonatel),0.8
+,,SenTel (Tigo),0.8
+Serbia,381,,
+,,MONET,0.8
+,,Promonte,0.8
+,,Telekom Srbija (MTS),0.8
+,,Telenor Belgrade (MOBTEL),0.8
+,,VIP,0.8
+Seychelles,248,,
+,,Cable and Wireless,0.8
+,,Telecom Seychelles (Airtel),0.8
+Sierra Leone,232,,
+,,Comium,0.8
+,,Millicom S.L. Ltd.,0.8
+,,Mobitel,2.5
+,,Zain SL (Celtel S.L.),0.8
+Singapore,65,,
+,,M1,0.8
+,,SingTel,0.8
+,,StarHub Pte Ltd.,0.8
+Slovakia,421,,
+,,O2 (Telefonica),0.8
+,,Orange (Globtel),0.8
+,,T-Mobile (Eurotel),0.8
+Slovenia,386,,
+,,Mobitel,0.8
+,,Si.Mobil (Vodafone),0.8
+,,Tusmobil,0.8
+Solomon Islands,677,,
+,,Solomon Telekom Co Ltd (BREEZE),2.5
+Somalia,252,,
+,,Golis,2
+,,Hormood,2
+,,Nationlink,1
+,,Somafone FZLLC,1
+,,Telesom,2
+South Africa,27,,
+,,Cell C,1
+,,MTN,1
+,,Virgin Mobile,1
+,,Vodacom,1
+Spain,34,,
+,,"Orange (France Telecom, Amena)",1.5
+,,Telefonica (Movistar),1.5
+,,Vodafone (Airtel Movil),1.5
+,,Xfera Moviles (Yoigo),1.5
+Sri Lanka,94,,
+,,Air Lanka,0.8
+,,Hutchinson,0.8
+,,Mobitel,0.8
+,,MTN (Dialog),0.8
+,,Tigo (Celltel),0.8
+St. Kitts And Nevis,1869,,
+,,Cable & Wireless,0.8
+,,Digicel,0.8
+St. Lucia,1758,,
+,,AT&T,0.8
+,,Cable and Wireless,0.8
+,,Digicel,0.8
+St. Vincent,1784,,
+,,Cable and Wireless,0.8
+,,Cingular (AT&T),0.8
+,,Digitel,0.8
+Sudan,249,,
+,,MTN,0.8
+,,Zain (MobiTel),0.8
+Suriname,597,,
+,,Digicel,0.8
+,,Intelsur N.V.,0.8
+,,Telesur,0.8
+Swaziland,268,,
+,,Swazi MTN,0.8
+Sweden,46,,
+,,Hi3G Access AB,0.8
+,,Spring Mobile,1.5
+,,Swefour AB,0.8
+,,Tele2 (Comviq),0.8
+,,Telenor (Vodafone),1
+,,"Telia (Sonera,Mobitel)",0.8
+,,Ventelo Sverige AB,0.8
+Switzerland,41,,
+,,In &Phone,1
+,,Orange,1
+,,"Sunrise (TDC,diax)",1
+,,Swisscom (Migros),1
+,,Tele2,1
+Syria,963,,
+,,MTN (Spacetel),0.8
+,,SyriaTel,0.8
+Taiwan,886,,
+,,Chunghwa Telecom,0.8
+,,Chunghwa-LDM- (GSM),1.5
+,,CT2 Service,1.5
+,,FarEasTone,0.8
+,,FarEasTone (DCS),0.8
+,,FarEasTone Mobitai TransAsia,1
+,,KGT (DCS),0.8
+,,Mobitai (GSM),0.8
+,,Taiwan Mobile Co (TCC),0.8
+,,TransAsia,0.8
+,,VIBO Telecom,0.8
+Tajikistan,992,,
+,,Babilon-Mobile,0.8
+,,Indigo,0.8
+,,JC Somoncom,0.8
+,,TT Mobile,1.5
+Tanzania,255,,
+,,Celltel,0.8
+,,"Tigo (MIC, Mobitel)",0.8
+,,Vodacom (T) Ltd.,0.8
+,,Zantel Ltd.,0.8
+Thailand,66,,
+,,AIS (Advanced Info Service),0.8
+,,Digital Phone Co,0.8
+,,TAC (DTAC),0.8
+,,True Move (Orange),0.8
+Togo,228,,
+,,Telecel,0.8
+,,Togocel,0.8
+Tonga Islands,676,,
+,,Digicel (Tonga) Limited,0.8
+,,Tonga Communications Corporation (U-CALL),2.5
+Trinidad and Tobago,1868,,
+,,Digicel,0.8
+,,Telcom Services (TSTT),0.8
+Tunisia,216,,
+,,Tunisiana (Osracom),0.8
+,,"Tunisie Telecom (Tunicell,Tuntel)",0.8
+Turkey,90,,
+,,Avea,0.8
+,,Turkcell,1
+,,Vodafone (Telsim),0.8
+Turkmenistan,993,,
+,,BCTI,0.8
+Turks and Caicos Islands,1649,,
+,,Cable & Wireless,0.8
+,,Digicel,0.8
+,,IslandCom,2.5
+Uganda,256,,
+,,CelTel (Zain),0.8
+,,MTN,0.8
+,,Uganda Telecom (UTL Telecel),0.8
+,,Warid Telecom,1.5
+UK,44,,
+,,BT (PSTN),2
+,,Hutchison 3G UK Ltd,2
+,,O2 (BT Cellnet),1.5
+,,Orange,1.5
+,,T-Mobile (Virgin),1.5
+,,Vodafone,1.5
+Ukraine,380,,
+,,Astelit,0.8
+,,Golden Telecom Bancomsvyaz,0.8
+,,Kyivstar GSM,0.8
+,,Ukrainian Mobile Communications (MTS UKR),0.8
+,,Ukrainian Radio Systems,0.8
+United Arab Emirates,971,,
+,,DU (EITC),0.8
+,,Etisalat,0.8
+Uruguay,598,,
+,,América Móvil Wireless (CTI),0.8
+,,Antel,0.8
+,,Movistar,0.8
+USA,1,,
+,,Alltel (text only),1
+,,AT&T Blue (text only),1
+,,AT&T Orange (Cingular - text only),1
+,,Boost CDMA (Nextel - text only),1
+,,Boost iDEN (Nextel - text only),1
+,,Cellular South (text only),1
+,,Centennial (text only),1
+,,Cincinnati Bell,1
+,,Cricket Communications (text only),1
+,,Dobson (text only),1
+,,Nextel(text only),1
+,,nTelos (text only),1
+,,Sprint CDMA (text only),1
+,,Sprint iDEN (text only),1
+,,Suncom (text only),1
+,,T-Mobile (text only),1
+,,US Cellular (text only),1
+,,Verizon (text only),1
+,,Virgin Mobile (MVNO:Sprint - text only),1
+,,West Central (text only),1
+Uzbekistan,998,,
+,,Coscom,0.8
+,,DAEWOO (Unitel),0.8
+,,JV Uzdunrobita,0.8
+,,Uzmacom,0.8
+Vanuatu,678,,
+,,Digicel,0.8
+,,Telecom Vanuatu (SMILE),1
+Vatican City State,39,,
+,,TIM,2.5
+,,Vodafone (Omnitel),2.5
+Venezuela,58,,
+,,DigiCel,0.8
+,,Digitel,0.8
+,,Infonet,0.8
+,,Movilnet,1.5
+,,Movistar (Telcel),0.8
+Vietnam,84,,
+,,Mobifone (VMS),0.8
+,,Viettel,0.8
+,,Vinaphone (VTS),0.8
+Virgin Islands (US),1340,,
+,,AT&T,0.8
+,,Centennial Puerto Rico Operations Corp,0.8
+,,Sprint Spectrum L.P.,0.8
+Yemen,967,,
+,,HiTS-UNITEL (Y),0.8
+,,MPC (Sabafon),0.8
+,,MTN (Spacetel),0.8
+,,Yemen Mobile (CDMA),0.8
+Zambia,260,,
+,,Cell Z (Zamtel MTS),0.8
+,,CelTel (Zain),0.8
+,,MTN (Telecel),0.8
+Zanzibar,259,,
+,,Zantelir,0.8
+Zimbabwe,263,,
+,,Econet,0.8
+,,NetOne,0.8
+,,Telecel (P+T Corp.),0.8

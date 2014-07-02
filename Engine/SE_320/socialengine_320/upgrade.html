@@ -1,0 +1,276 @@
+<html>
+<!-- $Id: upgrade.html 154 2009-04-04 01:17:52Z john $ -->
+<head>
+<title>Upgrade SocialEngine</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>SocialEngine Upgrade Instructions</h1>
+<p>
+  Designed and solely distributed by <a href='http://www.webligo.com/'>Webligo</a>
+</p>
+
+
+<div style='width: 600px;'>
+
+<p>
+  FOR LICENSE INFORMATION, PLEASE REFER TO <a href='license.html'>LICENSE.HTML</a>
+  WHICH IS PROVIDED WITH THIS SOFTWARE. BY INSTALLING
+  THIS SOFTWARE PRODUCT, YOU SIGNFIY THAT YOU AGREE WITH
+  THE TERMS AND CONDITIONS PROVIDED BY THE LICENSE AGREEMENT.
+</p>
+
+<p>
+  Note: We keep unique records for every SocialEngine license
+  that is purchased. Piracy is not tolerated under any
+  circumstances - those who breach the license agreement
+  outlined in license.html will be prosecuted to the fullest
+  extent of the law.
+</p>
+<br />
+
+
+<h2>SOCIALENGINE 3.10+ UPGRADE INSTRUCTIONS</h2>
+<ol>
+  <li>
+    <b>Please also read the section below that applies to your upgrade</b>
+  </li>
+  <li>
+    Due to changes in the template compiler functions, you MUST clear out the
+    contents of "include/smarty/templates_c" when upgrading
+  </li>
+  <li>
+    <b>Important!</b> SocialEngine 3.10+ uses PHP sessions to keep track of users' login info 
+    (which is more secure than cookies). Unfortunately, the plugin upload pages
+    clear out the session data. If the plugin has an upload page, and was
+    released before 3.10, you must remove the following 3 lines from these
+    files (if you have the corresponding plugins):
+    
+    <div style='margin-left: 10px; margin-top: 5px;'>
+      user_album_upload.php (Albums &lt;=3.04)<br />
+      user_blog_album_upload.php (Blogs &lt;=3.03)<br />
+      user_event_upload.php (Events &lt;=3.03)<br />
+      user_group_upload.php (Groups &lt;=3.03)<br />
+      user_music_upload.php (Music &lt;=3.03)<br />
+      user_video_upload.php (Videos &lt;=3.01)
+    </div>
+    <br />
+    
+    Here are the lines that must be removed:
+    <div class="box" style='margin-left: 10px; margin-top: 5px;'>
+      session_start();<br />
+      $_SESSION = array();<br />
+      session_regenerate_id();
+    </div>
+    <br />
+    
+    Plugins released after 3.10 of the platform will not need this change.
+  </li>
+</ol>
+<br />
+
+
+
+<h2>SOCIALENGINE 3.02+ -> 3.X UPGRADE INSTRUCTIONS</h2>
+
+<ol>
+  <li>
+    If you are upgrading from v2.8 or below, please use the instructions further down 
+    on this page. Make a COMPLETE BACKUP before you begin.
+  </li>
+  <li>
+    Upload all of the files and folders contained in the "/files" directory in this zip 
+    to your server EXCEPT the "/uploads_user" directory. Do not upload install.html, 
+    license.html, upgrade.html, changelog.html, or the contents of the "/install" directory. 
+    <br />
+    - Upload the "/images" and "/include" directories in BINARY mode.
+    <br />
+    - Upload everything else in ASCII mode.
+    <br />
+    <div style='padding-left: 50px;'>
+      Remember, a file named "index.php" is included with SocialEngine.
+      If you already have a homepage with this name, you can choose to
+      not upload this file. SocialEngine also comes with an example portal
+      page, "home.php", which you can use if desired.
+    </div>
+    <b>Note:</b> If you have made modifications to your SocialEngine installation, 
+    refer to <a href='changelog.html'>changelog.html</a> for a list of files and language
+    variables modified in each version. If you have made changes to those files, we suggest using 
+    <a href='http://winmerge.org/' target='_blank'>WinMerge</a> to consolidate your changes with the 
+    new files.
+    <br />
+    <br />
+  </li>
+  <li>
+    Upload the files upgrade.php and upgradesql.php to your server. These files can be found 
+    in the "/upgrade" directory in this zip.
+    <br />
+    <br />
+  </li>
+  <li>
+    Set full permissions (CHMOD 777) on the "/cache" directory
+    <br>Set full permissions (CHMOD 777) on the "/language" directory
+    <br>Set full permissions (CHMOD 777) on the "/language/indexes" directory
+    <br>Set full permissions (CHMOD 777) on the "/include/smarty/cache" directory
+    <br>Set full permissions (CHMOD 777) on the "/include/smarty/templates_c" directory
+    <br>Set full permissions (CHMOD 777) on every file inside the "/templates" directory
+    <br>
+    <br>
+  </li>
+  <li>
+    Point your browser to where you uploaded upgrade.php, for example:
+    http://www.yourdomain.com/socialnetwork/upgrade.php<br>
+    Follow the instructions given and run the upgrade script.
+    <br />
+    <br />
+  </li>
+  <li>
+    Remember to delete "upgrade.php" and "upgradesql.php" after your
+    upgrade has completed successfully. Leaving these files intact
+    poses a serious security risk!
+    <br />
+    <br />
+  </li>
+</ol>
+<br />
+
+
+<h2>SOCIALENGINE 2.X -> 3.X UPGRADE INSTRUCTIONS</h2>
+
+<ol>
+  <li>
+    If you are upgrading from v1.8 or below, you will need to upgrade to v2.X before you 
+    can upgrade to v3.00+. Make a COMPLETE BACKUP before you begin.
+  </li>
+  <li>
+    The upgrade to 3.00 involves replacing all of your PHP, TPL, and CSS files. This means 
+    that you will lose any changes you have made to these files. Unfortunately there is 
+    no easy way to avoid this since we've made so many changes to the platform. If possible, 
+    make a note about each change you've made in your current installation so that you can 
+    reapply them after the upgrade process. Though you will not lose any user data, your users 
+    will lose their previous recent actions during the upgrade. Upload all of the files and folders contained 
+    in the "/files" directory in this zip to your server EXCEPT the "/uploads_user" and "/uploads_admin" directories. 
+    Do not upload install.html, license.html, upgrade.html, changelog.html, or the 
+    contents of the "/install" directory. 
+    <br />
+    - Upload the "/images" and "/include" directories in BINARY mode.
+    <br />
+    - Upload everything else in ASCII mode.
+    <br />
+    <br />
+  </li>
+  <li>
+    Upload the files upgrade.php and upgradesql.php to your SocialEngine root directory on your server. 
+    These files can be found in the "/upgrade" directory in this zip.
+    <br />
+    <br />
+  </li>
+  <li>
+    Set full permissions (CHMOD 777) on the "/cache" directory<br />
+    Set full permissions (CHMOD 777) on the "/language" directory<br />
+    Set full permissions (CHMOD 777) on the "/language/indexes" directory<br />
+    Set full permissions (CHMOD 777) on the "/include" directory<br />
+    Set full permissions (CHMOD 777) on the "/include/smarty/cache" directory<br />
+    Set full permissions (CHMOD 777) on the "/include/smarty/templates_c" directory<br />
+    Set full permissions (CHMOD 777) on every file inside the "/templates" directory<br />
+    Set full permissions (CHMOD 777) on the "/uploads_admin" directory.<br />
+    Set full permissions (CHMOD 777) on the "/uploads_admin/ads" directory.<br />
+    Set full permissions (CHMOD 777) on "/include/database_config.php" (if it exists)<br />
+    <br />
+  </li>
+  <li>
+    Point your browser to where you uploaded upgrade.php, for example:
+    http://www.yourdomain.com/socialnetwork/upgrade.php<br>
+    Follow the instructions given and run the upgrade script.
+    <br />
+    <br />
+  </li>
+  <li>
+    Remember to delete "upgrade.php" and "upgradesql.php" after your
+    upgrade has completed successfully. Leaving these files intact
+    poses a serious security risk!
+    <br />
+    <br />
+  </li>
+</ol>
+<br />
+
+
+<h2>SUPPORT</h2>
+<p>
+If you cannot upgrade your SocialEngine or are experiencing errors in the
+script's operation, do not hesitate to submit a support ticket via our client
+area. We provide support at no cost for one (1) month after your purchase of
+the license. Also, if you find a bug at any time, please let us know as soon
+as possible, and we will fix it for free.
+</p>
+
+<p>
+Note: If you have made modifications to the PHP code, you may be - at our decision - 
+ineligible for our support service.
+</p>
+<br />
+
+
+<h2>FINAL NOTES</h2>
+<p>
+  Once again, thank you for your purchase of your SocialEngine license. We hope you enjoy
+  using our software as much as we enjoyed creating it!
+</p>
+<br />
+
+
+<div style='padding-left: 50px;'>
+  Best Regards,
+  <br />
+  The Webligo Group
+</div>
+<br />
+
+©2007 Webligo Developments
+</div>
+
+</body>
+</html>
+
+
+

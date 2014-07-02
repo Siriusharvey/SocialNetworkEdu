@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Install Radcodes - SocialEngine Plugin</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+h3 {
+    font-size: 10pt;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+.style1 {
+	color: #FF0000;
+}
+</style>
+</head>
+<body>
+
+<h1>Radcodes - SocialEngine Plugin Installation Instructions</h1>
+Designed and solely distributed by <a href='http://www.radcodes.com/'>Radcodes</a><br>
+
+<br>
+
+<div style='width: 640px;'>
+
+FOR LICENSE INFORMATION, PLEASE REFER TO <a href='license.html'>LICENSE.HTML</a>
+WHICH IS PROVIDED WITH THIS SOFTWARE. BY INSTALLING
+THIS SOFTWARE PRODUCT, YOU SIGNFIY THAT YOU AGREE WITH
+THE TERMS AND CONDITIONS PROVIDED BY THE LICENSE AGREEMENT.
+
+<br><br>
+
+Note: We keep unique records for every Radcodes - SocialEngine plugin license
+that is purchased. Piracy is not tolerated under any
+circumstances - those who breach the license agreement
+outlined in license.html will be prosecuted to the fullest
+extent of the law.
+
+<br><br>
+
+<h2>INSTALLATION INSTRUCTIONS</h2>
+	<p>Before you install Badge plugin, you must install these following 
+	plugins, which can be downloaded for FREE in your Shop Account Area</p>
+	<ul>
+		<li>Radcodes Core Library</li>
+		<li>Radcodes ePayment System</li>
+	</ul>
+	<p>After you install those 2 plugins above, you can proceed with the 
+	installation below.</p>
+
+<ol>
+	<li>Upload all of the files and folders contained in this zip file (in the &quot;/files&quot; 
+directory) to your server, EXCEPT for install.html, license.html. 
+Be sure to upload the files to the directory on your server where you have already 
+installed SocialEngine. Upload all files in ASCII mode. <br><br></li>
+	<li>Set full permissions (CHMOD 777) on all the files in the "/templates" directory.
+	<br>Set full permissions (CHMOD 777) on  "/uploads_badges" directory. <br>
+	<br></li>
+	<li>Login to your SocialEngine admin panel. On the "View Plugins" page you will see the plugin 
+	you have installed. Click the install link. Your installation is now 
+	complete!<br>&nbsp;<br></li>
+		<li><span class="style1">Integration for &quot;Special Members&quot; drop-down on TOP MENU.</span><br>Edit 
+		&quot;header.tpl&quot; template, put the code below around line 110, (this would 
+		make it show up as the last item on TOP-MENU header)<br><code>{include file='badge_topmenu.tpl'}</code><br><br>
+		so that the end result would look like this<code><br>{/if}<br>{include 
+		file='badge_topmenu.tpl'}<br>&lt;div class='top_menu_link_container_end'&gt;<br>
+		<br></code>Of course you can put it in any position on your TOP-MENU if 
+		you like.<br>You may also want to make adjustment to these lines as well if 
+		your TOP-MENU shows on 2 lines, and break the layout<br><code>{hook_foreach name=menu_main var=menu_main_args complete=menu_main_complete 
+		max=XXXX}<br>
+		.....<br>{hook_foreach name=menu_main var=menu_main_args start=XXXX}</code><br>
+		<br>Just update XXXX to whatever number you prefer, example = 5.<br><br></li>
+	<li><span class="style1">If you would like to have "Recent Badge's Members" entries listed on homepage, 
+	do the following.</span><br/>1. Edit "home.php", and put in code below<br/>
+	<code>$badgeassignments = badgeassignment_get_entries(5);<br>$smarty-&gt;assign_by_ref('badgeassignments', $badgeassignments);
+	<br></code><br>Where "5" is the number of job posts you want to show.<br>
+	<br>2. Edit "home.tpl" template, and put in code below where you like it to show up<br/>
+	<code>{include file='badgeassignment_recent_entries.tpl'}</code><br/>
+	<br/><strong>ADVANCED</strong>:
+
+
+the &quot;<code>badgeassignment_get_entries</code>&quot; also accept additional parameters for further 
+filtering and control what entries it should return<br><code>badgeassignment_get_entries($limit, $badge_id, 
+	$sort, $where)</code><br><br>where<br>- $limit = 
+	the number of entries to return<br>- $badge_id = the Badge ID in your system. Use 0 (zero) 
+	means return all new assignments for all badges, otherwise, only return 
+	entries of required Badge Id<br>- $sort = default to &quot;badgeassignment_dateapproved 
+	DESC&quot;, ie approval date in descending order<br>- $where = extra 
+	condition for query<br><br>NOTE: you can virtually use this on anywhere you like, not just homepage. You can also have more than one 
+	recent badge assignment blocks if you use different variables for them. <br><br></li>
+
+</ol>
+
+<h3 class="style1">Important Notice</h3>
+<ul>
+	<li><strong>URL Settings</strong> - Most plugins have additional URLs setting for SEO, therefore, if you use <em>Subdirectory URLs</em> you must update it after you install plugins to keep them up-to-date, otherwise, you may experience page-not-found or permission errors.</li>
+</ul>
+
+<h2>SUPPORT</h2>
+If you are experiencing errors in the script&#39;s operation, do not hesitate to contact us. Also, if you find a bug at any time, please let us know.
+<br><br>
+Note: If you have made modifications to the PHP code, you may be - at our decision - 
+ineligible for our support service.
+
+<h2>FINAL NOTES</h2>
+Once again, thank you for your Radcodes - SocialEngine plugin purchase. We hope you enjoy
+using our software as much as we enjoyed creating it!
+<br><br>
+<div style='padding-left: 50px;'>
+Best Regards,
+<br>Radcodes</div>
+<br>
+&copy; 2008 Radcodes Web Developments
+</div>
+
+</body>
+</html>
+
+
+

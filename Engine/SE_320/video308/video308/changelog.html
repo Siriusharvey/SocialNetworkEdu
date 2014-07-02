@@ -1,0 +1,171 @@
+<html>
+<!-- $Id: changelog.html 248 2009-11-14 03:32:30Z phil $ -->
+<head>
+<title>SocialEngine Video Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+
+<h1>SocialEngine Video Plugin Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+
+<h2>Version 3.08</h2>
+<ol>
+<li>admin/install_video.php - Incremented version</li>
+<li>include/flow_player/flowplayer-3.1.0.swf - Removed</li>
+<li>include/flow_player/flowplayer-3.1.5.swf - Updated Flow Player to 3.1.5 (Upload in binary mode)</li>
+<li>include/flow_player/flowplayer.controls-3.1.0.swf - Removed</li>
+<li>include/flow_player/flowplayer.controls-3.1.5.swf - Updated Flow Player to 3.1.5 (Upload in binary mode)</li>
+<li>templates/styles_video.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/video.tpl - Updated Flow Player to 3.1.5</li>
+
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.07</h2>
+<ol>
+  <li>include/class_video.php - Fixed thumbnail creation bug (improper arguments passed to -pix_fmt caused some ffmpeg versions to not properly create thumbnails)</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.06</h2>
+<ol>
+  <li>admin/install_video.php - Incremented version</li>
+  <li>templates/video.tpl - Fixed bug preventing playback in IE</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>admin/install_video.php - Updated the mod rewrite rules</li>
+  <li>include/flow_player/* - Updated Flow Player to 3.1.0 (Upload in binary mode)</li>
+  <li>templates/video.tpl - Updated Flow Player to 3.1.0; fixed reporting bug</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>header_video.php - Fixed bugs in permission checking, this will improve behavior on sites where video uploading is disabled</li>
+  <li>user_video.php - Fixed permissions bug for sites with uploading disabled; small security fix</li>
+  <li>user_video_upload.php - Fixed permissions bug for sites with uploading disabled</li>
+  <li>video.php - Fixed permissions bug for sites with uploading disabled</li>
+  <li>admin/install_video.php - Updated the mod rewrite rules and ffmpeg path checking code; fixed bugs in column creation when upgrading</li>
+  <li>include/class_video.php - Tweaked video folder creation and added error silencing to prevent error messages in admin panel; fixed activity feed media</li>
+  <li>templates/profile_video_tab.tpl - Fixed permissions bug for sites with uploading disabled; fixed profile display of YouTube videos when uploading is disabled</li>
+  <li>templates/user_video.tpl - Fixed bug with ffmpeg path and showing upload link; made it possible to delete failed uploads</li>
+  <li>templates/user_video_upload.tpl - Fixed permissions bug for sites with uploading disabled</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.03</h2>
+<ol>
+  <li>header_video.php - Added code to utilize hooked template includes; changed to match new permission settings</li>
+  <li>user_video.php - Added link to YouTube uploader</li>
+  <li>user_video_upload.php - Fixed problem where sessions started by third-party plugins would conflict with and prevent upload (for &lt;=3.07 only); added support for YouTube videos</li>
+  <li>video.php - Added support for YouTube videos</li>
+  <li>admin/admin_levels_videosettings.php - Added separate permission for YouTube videos</li>
+  <li>admin/install_video.php - Incremented version</li>
+  <li>images/icons/youtube.gif - Added icon</li>
+  <li>include/class_video.php - Added YouTube support to video edit creation methods</li>
+  <li>include/functions_video.php - Added function to extract a unique video ID from a YouTube URL</li>
+  <li>templates/admin_install_video.tpl - Made it possible to install without FFmpeg after acknowledging a warning</li>
+  <li>templates/admin_level_videosettings.tpl - Added separate option for YouTube videos</li>
+  <li>templates/header_video.tpl - No longer included (provided for backwards compatibility)</li>
+  <li>templates/user_video.tpl - Added link to YouTube uploader</li>
+  <li>templates/user_video_upload.tpl - Added support for YouTube videos.</li>
+  <li>templates/video.tpl - Added support for YouTube videos</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.02</h2>
+<ol>
+  <li>browse_videos.php - Fixed bug that would sometimes cause query to fail for anonymous users; fixed support for "Public Permission Defaults"</li>
+  <li>header_video.php - Fixed support for "Public Permission Defaults"; added site statistics hook</li>
+  <li><b>user_video_upload.php - Session compatibility fix for SE 3.10</b>; fixed bug with video search when disabled in admin panel</li>
+  <li>admin/admin_header_video.php - Added site statistics hook</li>
+  <li>admin/admin_levels_videosettings.php - Fixed bug in privacy handling that would update users in other levels; fixed checking no privacy options, will now replace it with only the most public</li>
+  <li>admin/install_video.php - Incremented version; added a utility that runs "find / -name 'ffmpeg'" for convenience; converted action types, notify types, and system emails to use static language variable IDs for new installs; fixed language variable that would cause video thumbnail to not show up in activity feed</li>
+  <li>include/functions_video.php - Added site statistics generation function; fixed bug that would cause all video action items to be private; action media path and link will now use relative URL</li>
+  <li>templates/admin_install_video.tpl - Added a utility that runs "find / -name 'ffmpeg'" for convenience</li>
+  <li>templates/admin_levels_videosettings.tpl - Made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well)</li>
+  <li>templates/user_video.tpl - Fixed javascript error occuring if videos are forced to show up in search results</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.01</h2>
+<ol>
+  <li>user_video_upload.php - Added support for the global flash uploader</li>
+  <li>admin/admin_video_utilities.php - Added</li>
+  <li>admin/install_video.php - Incremented version; fixed problem with code that checks if ffmpeg is installed; added support for retrying failed uploads; checks collation</li>
+  <li>include/class_video.php - Added support for the global flash uploader; fixed some problems with wmv and mpg encoding; added debug code (disabled by default)</li>
+  <li>include/functions_video.php - Added support for the global flash uploader; fixed some problems with wmv and mpg encoding; added debug code (disabled by default)</li>
+  <li>templates/admin_video_utilities.tpl - Added</li>
+  <li>templates/user_video.tpl - Added support for retrying failed uploads</li>
+  <li>templates/user_video_upload.tpl - Added support for the global flash uploader with client-side file extension and size checking support</li>
+</ol>
+<br />
+<br />
+
+
+©2007 Webligo Developments
+
+</body>
+</html>

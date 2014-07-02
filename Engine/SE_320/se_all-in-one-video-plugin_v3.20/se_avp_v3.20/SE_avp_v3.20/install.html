@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>General Installation for SocialEngine Plugin</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+span {
+	font-size: 12pt;
+	background: yellow;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+.box2 {
+	width:450px;
+	padding: 10px 13px 10px 13px; 
+	background: #f3f3f3;
+	border: 1px dashed #DDDDDD;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>All-in-one Video Plugin Installation Instructions</h1>
+Designed and solely distributed by <a href='http://www.jaatava-plugins.com/'>Jaatava-Plugins.com</a> and <a href='http://www.webhive.com.ua/'>WebHive.com.ua</a><br>
+
+<br>
+
+<div style='width: 800px;'>
+
+Note: We keep unique records for every SocialEngine license
+that is purchased. Piracy is not tolerated under any
+circumstances - those who breach the license agreement
+outlined in license.html will be prosecuted to the fullest
+extent of the law.
+
+<br><br>
+
+<h2>PRE-INSTALLATION INSTRUCTIONS (TO-DO ON YOUR COMPUTER)</h2>
+
+<ol>
+<li>
+Download JW FLV Media Player from <a href="http://www.longtailvideo.com/players/jw-flv-player/">http://www.longtailvideo.com/players/jw-flv-player/</a>.
+Type your email and select "I agree to the non commercial license" checkbox. <span>Unselect "Include the JW Viral Plugin"</span> checkbox and press "Download JW FLV Media Player" button.
+<br><br>
+Notice: <span>You can not use JW FLV Media Player on a commercial site if you do not have Commercial License.</span> You can order Commercial License
+from <a href="https://www.longtailvideo.com/players/order">https://www.longtailvideo.com/players/order</a>. If you are not sure whether your website is
+a commercial site or not, please visit <a href="https://www.longtailvideo.com/players/order">order page</a> and see the examples. Also, the All-in-one Video plugin contains a standard skin.
+If you want to customize your player's skins, you can order new ones from <a href="https://www.longtailvideo.com/players/order">https://www.longtailvideo.com/players/order</a>.
+<br><br>
+</li>
+<li>
+Extract <b>player.swf</b> and <b>yt.swf</b> you just downloaded from 
+<a href="http://www.longtailvideo.com/players/jw-flv-player/">http://www.longtailvideo.com/players/jw-flv-player/</a> and insert them on  
+All-in-one Video Plugin "/files/" directory. If you have download any skins, extract the file with extension *.swf (ex: modieus.swf) on "/files/include/vid_skins/" directory.
+</li>
+</ol>
+
+<br>
+
+<h2>INSTALLATION INSTRUCTIONS - PLEASE FOLLOW THIS GUIDE CAREFULLY!</h2>
+
+<ol>
+<li>
+Upload all of the files and folders contained in this zip file (in the "/files" directory)
+to your server, EXCEPT for install.html and license.html. 
+Be sure to upload the files to the directory on your server where you have already installed 
+SocialEngine. Upload all files in the "/images/" directory in BINARY mode - player.swf and yt.swf must also be uploaded in BINARY mode. Upload all other 
+files in ASCII mode.
+<br><br>
+</li>
+<li>
+Set full permissions (CHMOD 777) on the "/uploads_vid/" directory and on all subdirectories 
+inside "/uploads_vid/".
+<br><br>
+</li>
+<li>
+Login to your SocialEngine admin panel. On the "View Plugins" page you will see the plugin. Click the install link. Your installation is now complete! 
+<br><br>
+</li>
+<li>
+Be sure to delete the file "admin/install_vid.php" when you are finished. Leaving 
+this file intact poses a serious security risk!
+</li>
+</ol>
+
+<br>
+
+<h2>GETTING STARTED</h2>
+
+<ol>
+	<li>Modify the FFmpeg and FLVTool2 configuration in the admin panel. (Global Video Settings)</li>
+	<li>Edit the video user level settings.</li>
+	<li>Make sure that the maximum upload filesize is the same in your php.ini file.</li>
+	<li>Also, make sure that your php.ini is configured correctly to handle big file uploads.</li>
+  <li>Before uploading videos make sure that your SE directory is NOT password protected.</li>
+</ol>
+
+<br>
+
+<h2>3.X -> 3.20 UPGRADE INSTRUCTIONS</h2>
+
+<ol>
+	<li>Make a COMPLETE BACKUP before you begin.<br><br>
+  </li>
+	<li>Upload all of the files and folders contained in this zip file (in the "/files" directory)
+to your server by replacing the old ones, EXCEPT for install.html and license.html. 
+Be sure to upload the files to the directory on your server where you have already installed 
+SocialEngine. Upload all files in the "/images/" directory in BINARY mode - player.swf and yt.swf must also be uploaded in BINARY mode. Upload all other 
+files in ASCII mode.<br><br>
+  </li>
+  <li>
+Set full permissions (CHMOD 777) on the "/uploads_vid/" directory and on all subdirectories 
+inside "/uploads_vid/".
+  <br><br>
+  </li>
+  <li>Please remove the files encode.php and config.php which have been replaced with new ones for security reasons.<br><br></li>
+  <li>
+Login to your SocialEngine admin panel. On the "View Plugins" page you will see the plugin. Click the upgrade link. Your installation is now complete! 
+  <br><br>
+  </li>
+  <li>
+Be sure to delete the file "admin/install_vid.php" when you are finished. Leaving 
+this file intact poses a serious security risk! Also ensure that the All-in-one Video Plugin settings are still like you want them to be and your SE directory is NOT password protected.</li>
+</ol>
+
+<br>
+
+<h2>SUPPORT</h2>
+<span>We do not provide support on FFmpeg and FLVTool2 issues!</span>
+<br>Please notify us any errors/bug via email at those email adresses: info@jaatava-plugins.com & socialengine@webhive.com.ua
+
+<br><br>
+<div style='padding-left: 50px;'>
+Best Regards,
+<br>Jaatava-Plugins.com
+<br>WebHive.com.ua
+</div>
+<br>
+©2009 Jaatava-Plugins.com & WebHive.com.ua
+</div>
+
+</body>
+</html>
+
+
+

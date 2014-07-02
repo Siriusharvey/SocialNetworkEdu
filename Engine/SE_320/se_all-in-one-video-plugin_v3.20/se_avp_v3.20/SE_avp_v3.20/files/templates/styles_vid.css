@@ -1,0 +1,93 @@
+div.vid_tab {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #DDDDDD;
+	background: #F5F5F5;
+}
+div.vid_icons_container {
+        height: 70px;
+        float: left;
+        width: 120px;
+        <!--[if gt IE 5]>
+        width: 125px;
+        <![endif]-->
+        overflow: auto;
+        border: 0px;
+        padding: 10px;
+        background: #FFFFFF;
+}
+div.vid_icons {
+        vertical-align: middle;
+        float: left;
+        padding-right: 5px;
+        border: 0; 
+}
+div.vid_failed {
+	clear: both;
+	margin: 5px;
+	padding: 10px;
+	border: 1px dashed #DDDDDD;
+}
+div.vid_scroll_tab {
+	margin: 5px;
+	padding: 5px;
+	border: 0px;
+	background: #FFFFFF;
+}
+div.vid_scroll {
+        overflow: auto;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	padding-bottom: 5px;
+	background: #FFFFFF;
+}
+div.vid_user {
+        width: 418px;
+	float: left;
+	background: #F5F5F5;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #CCCCCC;
+}
+td.vid_left {
+	vertical-align: top;
+}
+td.vid_right {
+	vertical-align: top;
+	padding-left: 10px;
+}
+div.vid_photo {
+	background: #FFFFFF; 
+	padding: 5px; 
+	border: 1px solid #CCCCCC; 
+	vertical-align: middle; 
+	text-align: center;
+}
+div.vid_title {
+	font-size: 10pt; 
+	font-weight: bold; 
+	padding: 0px 5px 5px 0px; 
+	border-bottom: 1px solid #CCCCCC; 
+	margin-bottom: 5px;
+}
+div.vid_stats {
+	font-size: 7pt; 
+	color: #777777;
+	font-weight: normal;
+}
+div.vid_options {
+	margin-top: 7px; 
+	border-top: 1px solid #DDDDDD; 
+	padding-top: 7px;
+}
+div.vid_row_title {
+	overflow: hidden; 
+	font-weight: bold; 
+	margin-top: 3px;
+}
+div.vid_row_info {
+	margin-top: 1px; 
+	font-size: 7pt; 
+	color: #777777;
+}

@@ -1,0 +1,218 @@
+<html>
+<!-- $Id: changelog.html 272 2009-12-11 01:32:47Z steve $ -->
+<head>
+<title>SocialEngine Event Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+
+<h1>SocialEngine Event Plugin Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+<h2>Version 3.06</h2>
+<ol>
+<li>admin/install_event.php - Incremented version</li>
+<li>event.php - Corrected the number of members awaiting response and overall total member count</li>
+<li>templates/admin_event.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/browse_events.tpl - Fixed missing subdirectory url support; Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/event.tpl - Corrected total member count</li>
+<li>templates/event_album_file.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/styles_event.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/user_event.tpl - Fixed bug allowing non-priveledged users from creating events</li>
+<li>user_event_add.php - Fixed bug allowing non-priveledged users from creating events</li>
+<li>user_event_edit_members.php - Corrected the number of members awaiting response </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>event_ajax.php - Fixed bug with pagination for event media</li>
+  <li>header_event.php - Added code to utilize hooked template includes</li>
+  <li>user_event_upload.php - Fixed problem where sessions started by third-party plugins would conflict with and prevent upload (for &lt;=3.07 only); action media path and link will now use relative URL</li>
+  <li>admin/install_event.php - Incremented version. </li>
+  <li>include/class_event.php - Fixed very minor security issue where at the most a private user's username could be viewed; fixed a problem with html being displayed in event descriptions</li>
+   <li>templates/browse_events.tpl - Added a strip tags to the event descriptions</li>
+  <li>templates/event.tpl - Fixed rare bug related to action media where incorrect images would be displayed; fixed a small bug with the total member count; fixed reporting bug</li>
+  <li>templates/event_album_file.tpl - Fixed reporting bug</li>
+  <li>templates/header_event.tpl - No longer included (provided for backwards compatibility)</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>browse_events.php - Add handling for total comments and members columns; fixed security issue with event category ID</li>
+  <li>event.php - Add handling for total comments and members columns; fixed HTML in event description</li>
+  <li>event_ajax.php - Add handling for total comments column; fixed bugs with being able to do actions if user doesn't exist</li>
+  <li>event_album_file.php - Add handling for total files columns</li>
+  <li>header_event.php - Added code to handle list view; added site statistics hook</li>
+  <li>user_event.php - Fixed bug with displaying month name in month view</li>
+  <li>user_event_add.php - Popup calendar now tries to use the correct date format order as set in the admin panel; added the ability to create events in the past (as allowed by admin)</li>
+  <li>user_event_edit.php - Popup calendar now tries to use the correct date format order as set in the admin panel; added the ability to create events in the past (as allowed by admin)</li>
+  <li><b>user_event_upload.php - Session compatibility fix for SE 3.10</b>; added handling for total files columns; added support for client-side max size limit; fixed the missing filename in result message</li>
+  <li>admin/admin_header_event.php - Added site statistics hook</li>
+  <li>admin/admin_levels_eventsettings.php - Fixed bug in privacy handling that would update users in other levels; fixed checking no privacy options, will now replace it with only the most public; added the missing event description allowed HTML tags; added the ability to allow users to create past events</li>
+  <li>admin/admin_viewevents.php - Add handling for total comments and members columns</li>
+  <li><b>admin/install_event.php - Fixed bad link in group media comment action type (Requires SE 3.10);</b> Incremented version; added columns for total comments and members, total media comments, and total album files and space; new installations will use static language vars for actiontypes, notifytypes, and systememails to ease importing</li>
+  <li>include/class_event.php - Added handling for new columns added in install_event.php; fixed some bugs with notifications; added the ability to create events in the past (as allowed by admin)</li>
+  <li>include/functions_event.php - Added site statistics generation function; fixed some privacy handling bugs in the action feed</li>
+  <li>templates/admin_levels_eventsettings.tpl - Made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well); added the missing event description allowed HTML tags; added the ability to allow users to create past events</li>
+  <li>templates/browse_events.tpl - Add handling for total comments and members columns; fixed bug with event date; fixed bug where changing order or view would lose selected category</li>
+  <li><b>templates/event.tpl - Fixed bad link in event media comment action type (Requires SE 3.10, you can skip this file if you have &lt;= 3.07)</b>; added handling for total comments and members columns</li>
+  <li>templates/event_album_file.tpl - Add handling for total comments column</li>
+  <li>templates/profile_event_list.tpl - Added</li>
+  <li>templates/style_event_calendar.css - Fixed popup calendar images</li>
+  <li>templates/user_event_add.tpl - Fixed incorrect image source; popup calendar now tries to use the correct date format order as set in the admin panel</li>
+  <li>templates/user_event_edit.tpl - Popup calendar now tries to use the correct date format order as set in the admin panel</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.03</h2>
+<ol>
+  <li>browse_events.php - Made upcoming events default selection</li>
+  <li>event.php - Fixed bug with privacy and custom styles</li>
+  <li>user_event_upload.php - Fixed bug in getting photo size</li>
+  <li>admin/install_event.php - Incremented version; modified installer to fix db structure problems caused by bugs in events 3.01 installer</li>
+  <li>include/class_event.php - Fixed num_members for event listing</li>
+  <li>include/functions_event.php - Fixed bug with media tag query</li>
+  <li>templates/admin_levels_eventsettings.tpl - Fixed typo preventing disabling of events</li>
+  <li>templates/browse_events.tpl - Made upcoming events default selection; added missing display of event date</li>
+  <li>templates/user_edit_event_settings.tpl - Fixed bug with level settings and custom styles</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.02</h2>
+<ol>
+  <li>user_event_add.php - Languagified some things for the popup calendar; fixed parse error in run-time created function</li>
+  <li>user_event_edit.php - Languagified some things for the popup calendar; fixed parse error in run-time created function</li>
+  <li>admin/install_event.php - Incremented version; fixed a a couple bugs related to fresh installs; added search-related language variables; fixed problem with upgrade from v2 (privacy); now adds default category if none exist; fixed bogus event media url (regular)</li>
+  <li>include/functions_event.php - Fixed search feature</li>
+  <li>include/js/calendar.compat.js - Added some code to support language for day and year suffixes (th, nd, rd, Japanese/Chinese year and day suffixes)</li>
+  <li>include/js/class_event_files.js - Fixed bug with empty titles</li>
+  <li>templates/user_event_add.tpl - Languagified some things for the popup calendar</li>
+  <li>templates/user_event_edit.tpl - Languagified some things for the popup calendar</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.00alpha/3.01</h2>
+<p>
+  The upgrade to 3.00alpha/3. involves replacing all of your PHP, TPL, 
+  and CSS files. This means that you will lose any changes you have made to
+  these files. Unfortunately there is no easy way to avoid this since we've
+  made so many changes to the platform. If possible, make a note about each
+  change you've made in your current installation so that you can reapply them
+  after the upgrade process. 
+</p>
+<br />
+<br />
+
+
+<h2>Version 2.20</h2>
+<ol>
+  <li>header_event.php - Fixed minor security bug.</li>
+  <li>admin/admin_header_event.php - Fixed minor security bug.</li>
+  <li>templates/event.tpl - Fixed stylistic issues.</li>
+  <li>templates/profile_event.tpl - Calendar now works properly when SE is installed in a subdirectory and when adsense is at the top of the page.</li>
+  <li>templates/profile_event_calendar.tpl - Fixed stylistic issues, bug with changing months.</li>
+  <li>templates/user_event.tpl - Fixed stylistic issues, bug with clicking on event image.</li>
+  <li>templates/user_event_browse.tpl - Fixed stylistic issues.</li>
+  <li>templates/user_event_edit.tpl - Fixed incorrect link to invites page.</li>
+  <li>templates/user_event_edit_members.tpl - Inserted language variable in file.</li>
+  <li>
+    lang_english_event.php - <br />
+    <blockquote>
+      $event[51] = "&amp;#0102;&amp;#0114;&amp;#0111;&amp;#0109;";<br>
+      $profile_event_calendar[13] = "&amp;#0102;&amp;#0114;&amp;#0111;&amp;#0109;";<br>
+      $user_event[36] = "&amp;#0102;&amp;#0114;&amp;#0111;&amp;#0109;";<br>
+      $user_event_browse[22] = "&amp;#0102;&amp;#0114;&amp;#0111;&amp;#0109;";<br>
+      $user_event_edit_members[43] = "Guest List";
+    </blockquote>
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.10</h2>
+<ol>
+  <li>event.php - Fixed privacy bug.</li>
+  <li>event_album.php - Fixed privacy bug.</li>
+  <li>event_album_file.php - Fixed privacy bug.</li>
+  <li>event_comments.php - Fixed privacy bug.</li>
+  <li>event_members.php - Fixed privacy bug.</li>
+  <li>profile_event_calendar.php - Fixed date language bug.</li>
+  <li>user_event.php - Fixed date language bug.</li>
+  <li>user_event_browse.php - Future events (only) are displayed in ascending chronological order.</li>
+  <li>user_event_rsvp.php - Fixed bug with recent activity action "attendevent".</li>
+  <li>include/class_event.php - Fixed privacy bug.</li>
+  <li>templates/event.tpl - "View All Comments" link only displays when there are comments.</li>
+  <li>templates/profile_event_calendar.tpl - Fixed date language bug.</li>
+  <li>templates/user_event.tpl - Fixed date language bug.</li>
+  <li>
+    lang_english_event.php - <br />
+    <blockquote>
+    $user_event_browse[4] = "Browse Upcoming Events";<br>
+    $user_event_browse[10] = "No upcoming events were found in this category.";
+    </blockquote>
+  </li>
+</ol>
+
+
+<br />
+©2007 Webligo Developments
+
+</body>
+</html>
+
+
+

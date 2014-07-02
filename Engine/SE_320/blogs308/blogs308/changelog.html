@@ -1,0 +1,341 @@
+<html>
+<!-- $Id: changelog.html 241 2009-11-14 02:48:21Z phil $ -->
+<head>
+<title>SocialEngine Blog Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+
+<h1>SocialEngine Blog Plugin Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+<h2>Version 3.08</h2>
+<ol>
+<li>admin/install_blog.php - Incremented version</li>
+<li>templates/browse_blogs.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/styles_blog.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/styles_blog_album.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/user_blog.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/user_blog_subscriptions.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+</ol>
+<br />
+<br />
+<h2>Version 3.07</h2>
+<ol>
+  <li>blog_ajax.php - Security fixes</li>
+  <li>browse_blogs.php - SQL syntax error fixed</li>
+  <li>user_blog_album_browse.php - Fixed bug that would cause only some images to be displayed</li>
+  <li>include/fckeditor/* - Removed, these were moved to platform zip in v3.11</li>
+  <li>templates/blog.tpl - Fixed reporting bug</li>
+  <li>templates/browse_blogs.tpl - Fixed layout bug</li>
+  <li>templates/user_blog_entry.tpl - Fixed user interface issue when editing a blog</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.06</h2>
+<ol>
+  <li>blog_ajax.php - Changed entity handling for preview task</li>
+  <li>header_blog.php - Added code to utilize hooked template includes</li>
+  <li>user_blog_entry.php - Changed entity handling</li>
+  <li>admin/install_blog.php - Incremented version</li>
+  <li>include/class_blog.php - Fixed problems when posting blog entries (HTML, UTF8, apostrophes, etc; requires include/class_inputfilter.php from core 3.12); fixed missing checking of trackback enabled option</li>
+  <li>templates/blog.tpl - Added "Back to My Blog" and "Edit This Entry" links shown to owner for convenience</li>
+  <li>templates/header_blog.tpl - No longer included for 3.12+ (provided for backwards compatibility)</li>
+  <li>templates/user_blog_entry.tpl - Moved fckeditor js include here from header_blog.tpl</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>blog.php - Fixed SQL vulnerability</li>
+  <li>user_blog_album_upload.php - Fixed problem where sessions started by third-party plugins would conflict with and prevent upload (for &lt;=3.07 only)</li>
+  <li>admin/install_blog.php - Incremented version</li>
+  <li>include/class_blog.php - Fixed problem when posting blog entries with apostrophes</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>browse_blogs.php - Fixed support for "Public Permission Defaults"; changed handling of user-created blog categories</li>
+  <li>blog.php - Fixed blog view counting; added handling for new comment and trackback count columns</li>
+  <li>browse_blogs.php - Added handling for new comment and trackback count columns; fixed support for "Public Permission Defaults"</li>
+  <li>header_blog.php - Fixed support for "Public Permission Defaults"; added site statistics hook</li>
+  <li><b>user_blog_album_upload.php - Session compatibility fix for SE 3.10</b>; action media path and link will now use relative URL</li>
+  <li>user_blog_entry.php - Changed handling of user-created blog categories; added level setting to allow/disallow category creation</li>
+  <li>admin/admin_blog.php - Now only shows admin created categories</li>
+  <li>admin/admin_header_blog.php - Added site statistics hook</li>
+  <li>admin/admin_levels_blogsettings.php - Fixed bug in privacy handling that would update users in other levels; fixed checking no privacy options, will now replace it with only the most public; added level setting to allow/disallow category creation</li>
+  <li>admin/install_blog.php - Incremented version; added columns to store total comments and trackbacks; new installations will use static language vars for actiontypes, notifytypes, and systememails to ease importing; changed handling of user-created blog categories</li>
+  <li>include/class_blog.php - Added handling for new comment and trackback count columns; changed handling of user-created blog categories; fixed bug in subscription notifications that would sometime cause errors; added category name truncation</li>
+  <li>include/functions_blog.php - Added site statistics generation function</li>
+  <li>templates/admin_levels_blogsettings.tpl - Added level setting to allow/disallow category creation; made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well)</li>
+  <li>templates/blog.tpl - Added handling for new comment and trackback count columns; added display of category in each entry; added category name truncation in sidebar</li>
+  <li>templates/browse_blogs.tpl - Added handling for new comment and trackback count columns; changed handling of user-created blog categories; added category name truncation</li>
+  <li>templates/profile_blog.tpl - Added display of category</li>
+  <li>templates/user_blog.tpl - Added handling for new comment and trackback count columns; added preview text</li>
+  <li>templates/user_blog_album_browse.tpl - Fixed the image url for the album browser</li>
+  <li>templates/user_blog_entry.tpl - Changed handling of user-created blog categories; added level setting to allow/disallow category creation; added category name truncation in select box</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.03</h2>
+<ol>
+  <li>browse_blogs.php - Removed cleanHTML call, now in template</li>
+  <li>header_blog.php - Changed variable name for profile as it was conflicting with some other plugin</li>
+  <li>user_blog_album_upload.php - Fixed bug in getting activity feed photo size</li>
+  <li>admin/install_blog.php - Incremented version</li>
+  <li>include/class_blog.php - Changed handling of html entities to match removal of FCKeditor's ProcessHTMLEntities</li>
+  <li>templates/blog.tpl - Fixed missing comment security code</li>
+  <li>templates/browse_blogs.tpl - Added strip_tags to body that was removed from php</li>
+  <li>templates/profile_blog.tpl - Changed variable name as it was conflicting with some other plugin</li>
+  <li>templates/user_blog_entry.tpl - Fixed default search value</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.02beta</h2>
+<ol>
+  <li>blog.php - Changed handling of level_blog_allow</li>
+  <li>blog_entry.php - Removed</li>
+  <li>header_blog.php - Changed handling of level_blog_allow</li>
+  <li>user_blog.php - Changed handling of level_blog_allow</li>
+  <li>user_blog_album_browse.php - Added for Browse/Upload integration with albums</li>
+  <li>user_blog_album_upload.php - Added for Browse/Upload integration with albums</li>
+  <li>user_blog_entry.php - Changed handling of level_blog_allow</li>
+  <li>user_blog_settings.php - Changed handling of level_blog_allow</li>
+  <li>user_blog_subscriptions.php - Changed handling of level_blog_allow</li>
+  <li>admin/admin_levels_blogsettings.php - Added handling for the trackback options and the html option, as well as the view/create instead of allow</li>
+  <li>admin/install_blog.php - Incremented version; fixed several links stored in the database that pointed to the deprecated file blog_entry.php; added an allowed HTML setting to the user levels; added some indices on se_blogentries</li>
+  <li>images/icons/socialbookmarking* - Removed as they are included in the main platform as of 3.04</li>
+  <li>include/class_blog.php - HTML cleaning now uses the level setting; fixed missing language; removed unnecessary group by in list SQL</li>
+  <li>include/fckedtior - Added for Browse/Upload integration with albums</li>
+  <li>include/js/blog_fckconfig.js - Disabled ProcessHTMLEntities as it is handled in PHP and FCK was messing it up</li>
+  <li>templates/admin_levels_blogsettings.tpl - Added handling for the trackback options and the html option, as well as the view/create instead of allow</li>
+  <li>templates/blog_entry.tpl - Removed</li>
+  <li>templates/browse_blogs.tpl - Fixed style problems with Safari; now truncates category name; changed length of truncation to prevent multi-byte characters from running off the bottom</li>
+  <li>templates/profile_blog.tpl - Changed handling of level_blog_allow</li>
+  <li>templates/styles_blog.css - Fixed margin in IE for Archive/Categories lists</li>
+  <li>templates/styles_blog_album.css - Added for Browse/Upload integration with albums</li>
+  <li>templates/user_blog.tpl - Changed handling of level_blog_allow</li>
+  <li>templates/user_blog_album_browse.tpl - Added for Browse/Upload integration with albums</li>
+  <li>templates/user_blog_album_upload.tpl - Added for Browse/Upload integration with albums</li>
+  <li>templates/user_blog_entry.tpl - Fixed hiding of blog category selection to allow user category creation when none exist; fixed missing language; added hard-coded disabling of ProcessHTMLEntities because of caching</li>
+  <li>templates/user_blog_settings.tpl - Changed handling of level_blog_allow</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.00alpha/3.01beta</h2>
+<p>
+  The upgrade to 3.00alpha/3.01beta involves replacing all of your PHP, TPL,
+  and CSS files. This means that you will lose any changes you have made to
+  these files. Unfortunately there is no easy way to avoid this since we've
+  made so many changes to the platform. If possible, make a note about each
+  change you've made in your current installation so that you can reapply
+  them after the upgrade process. 
+</p>
+<br />
+<br />
+
+
+<h2>Version 2.50</h2>
+<ol>
+  <li>admin/admin_blog.php - Moved blog category management.</li>
+  <li>admin/admin_levels_blogsettings.php - Moved blog category management.</li>
+  <li>include/functions_blog.php - Fixed bug with searching through private entries.</li>
+  <li>templates/admin_blog.tpl - Moved blog category management.</li>
+  <li>templates/admin_levels_blogsettings.tpl - Moved blog category management.</li>
+  <li>templates/styles_blog.css - Fixed minor CSS issue.</li>
+  <li>lang/lang_english_blog.php<br />
+    <blockquote>
+    $admin_blog[15] = "Blog Entry Categories";<br>
+    $admin_blog[16] = "If you want to allow your users to categorize their blog entries, create the categories below. This feature is useful if you want to list all your users' blog entries that  If you have no categories, your users will not be given the option of assigning a blog category.";<br>
+    $admin_blog[17] = "Add Category";
+    </blockquote>
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.40</h2>
+<ol>
+  <li>header_blog.php - Fixed minor security bug.</li>
+  <li>user_blog_preview.php - Enabled AJAX blog preview.</li>
+  <li>admin/admin_header_blog.php - Fixed minor security bug.</li>
+  <li>templates/blog.tpl - Replaced language variable.</li>
+  <li>templates/blog_entry.tpl - Enabled AJAX blog preview.</li>
+  <li>templates/user_blog_editentry.tpl - Enabled AJAX blog preview.</li>
+  <li>templates/user_blog_newentry.tpl - Enabled AJAX blog preview.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.30</h2>
+<ol>
+  <li>templates/admin_viewblogs.tpl - Fixed blog entry date display format.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.20</h2>
+<ol>
+  <li>include/class_blog.php - Fixed bug with editing a blog entry's category.</li>
+  <li>templates/styles.css - Fixed line spacing in blog entries.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.10</h2>
+<ol>
+  <li>blog.php - Fixed privacy/comment bug for blog entries.</li>
+  <li>blog_entry.php - Fixed privacy/comment bug for blog entries.</li>
+  <li>include/class_blog.php - Fixed comment bug for blog entries.</li>
+  <li>templates/user_blog_edit.tpl - Fixed link to Blog Settings.</li>
+  <li>templates/blog_entry.tpl - Fixed bug with comment posting when security image is off.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.00</h2>
+<p>
+  The upgrade to 2.00 involves replacing all of your PHP, TPL, and CSS files. 
+  This means that you will lose any changes you have made to these files. 
+  Unfortunately there is no easy way to avoid this since we've made so many 
+  changes to the platform. If possible, make a note about each change you've made 
+  in your current installation so that you can reapply them after the upgrade process.
+</p>
+<br />
+<br />
+
+
+<h2>Version 1.50</h2>
+<ol>
+  <li>user_blog_newentry.php - Bug Fix: Blog titles and entries escape single quotes for the database.</li>
+  <li>user_blog_editentry.php - Bug Fix: Blog titles and entries escape single quotes for the database.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 1.40</h2>
+<ol>
+  <li>blog.php - Admin-specified number of entries per page now works properly.</li>
+  <li>user_blog_newentry.php - Blog titles and entries now censor banned words, added filter for XSS protection.</li>
+  <li>user_blog_editentry.php - Blog titles and entries now censor banned words, added filter for XSS protection.</li>
+  <li>user_blog_preview.php - Blog titles and entries now censor banned words, added filter for XSS protection.</li>
+  <li>include/class.inputfilter.php - Class to filter for XSS protection.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 1.30</h2>
+<ol>
+  <li>user_blog_newentry.php - Adding a blog entry now updates the user's last update date.</li>
+  <li>user_blog_editentry.php - Editing a blog entry now updates the user's last update date.</li>
+  <li>templates/blog_entry.tpl - Fixed photo dimension problem.</li>
+  <li>templates/user_blog_comments.tpl - Fixed photo dimension problem.</li>
+  <li>templates/blog.tpl - Linked blog entry titles to the blog entry page.</li>
+  <li>templates/admin_viewblogs.tpl - Allowed admin to view private blog entries as if logged in as user.</li>
+  <li>admin/admin_viewblogs.php - Allowed admin to view private blog entries as if logged in as user.</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 1.20</h2>
+<ol>
+  <li>blog_entry.php - Blog entry views were not being updated</li>
+  <li>templates/blog_entry.tpl - Untitled entries were displaying "$blog_entry5" instead of "Untitled"</li>
+  <li>templates/user_blog_image.tpl - FCKEditor image insert dialog box was displaying "$user_blog_image2" instead of "Upload Image"</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 1.10</h2>
+<ol>
+  <li>blog.php</li>
+  <li>blog_category.php</li>
+  <li>blog_entry.php</li>
+  <li>templates/admin_blog.tpl</li>
+  <li>templates/user_blog_editentry.tpl</li>
+  <li>templates/user_blog_newentry.tpl</li>
+  <li>lang/lang_english_blog.php<br />
+    <blockquote>
+    $blog[13] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+    $blog_category[11] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+    $blog_category[12] = "An Error Has Occurred";<br>
+    $blog_entry[14] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+    </blockquote>
+  </li>
+</ol>
+<br />
+<br />
+
+
+©2007 Webligo Developments
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,204 @@
+<html>
+<!-- $Id: changelog.html 283 2009-12-18 20:58:53Z phil $ -->
+<head>
+<title>SocialEngine Poll Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>SocialEngine Polls Plugin Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+<h2>Version 3.06</h2>
+<ol>
+  <li>admin/install_poll.php - Incremented version </li>
+  <li>include/js/class_poll.js - Fixed bug that would prevent view results. </li>
+</ol>
+<br />
+<br />
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>browse_polls.php - Implemented bit-wise view/vote/create level setting</li>
+  <li>header_poll.php - Added code to utilize hooked template includes; implemented bit-wise view/vote/create level setting</li>
+  <li>poll.php - Implemented bit-wise view/vote/create level setting; fixed privacy handling issue</li>
+  <li>poll_ajax.php - Implemented bit-wise view/vote/create level setting</li>
+  <li>polls.php - Implemented bit-wise view/vote/create level setting</li>
+  <li>user_poll.php - Implemented bit-wise view/vote/create level setting</li>
+  <li>user_poll_edit.php - Added missing censoring; implemented bit-wise view/vote/create level setting</li>
+  <li>user_poll_new.php - Added missing censoring; implemented bit-wise view/vote/create level setting</li>
+  <li>admin/admin_levels_pollsettings.php - Implemented bit-wise view/vote/create level setting</li>
+  <li>admin/install_poll.php - Incremented version; implemented bit-wise view/vote/create level setting</li>
+  <li>include/class_poll.php - Fixed missing censoring for create and edit; fixed theoretical injection vulnerability; fixed problem with validating privacy options on create/edit</li>
+  <li>templates/admin_levels_pollsettings.tpl - Implemented bit-wise view/vote/create level setting</li>
+  <li>templates/admin_viewpolls.tpl - Wrong parameter in view link fixed</li>
+  <li>templates/browse_polls.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/header_poll.tpl - No longer included (provided for backwards compatibility)</li>
+  <li>templates/poll.tpl - Implemented bit-wise view/vote/create level setting; fixed reporting bug</li>
+  <li>templates/polls.tpl - Implemented bit-wise view/vote/create level setting</li>
+  <li>templates/styles_poll.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>browse_polls.php - Fixed bug that would sometimes cause query to fail for anonymous users; fixed support for "Public Permission Defaults"</li>
+  <li>header_poll.php - Fixed support for "Public Permission Defaults"; added site statistics hook</li>
+  <li>poll_ajax.php - Added missing $page variable assignment; added code to prevent anonymous users from wasting db time</li>
+  <li>admin/admin_header_poll.php - Added site statistics hook</li>
+  <li>admin/admin_levels_pollsettings.php - Fixed bug in privacy handling that would update users in other levels; fixed checking no privacy options, will now replace it with only the most public</li>
+  <li>admin/install_poll.php - Incremented version; added se_polls.poll_totalcomments column for speed; new installations will use static language vars for actiontypes, notifytypes, and systememails to ease importing</li>
+  <li>include/class_poll.php - The method poll_list uses se_polls.poll_totalcomments instead of join to the se_pollcomments table (Requires SE v3.07)</li>
+  <li>include/functions_poll.php - Added site statistics generation function</li>
+  <li>templates/admin_levels_pollsettings.tpl - Made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well)</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.03</h2>
+<ol>
+  <li>poll_ajax.php - Removed the json_encode() emulation includes as they are now done in the header</li>
+  <li>admin/admin_levels_pollsettings.php - Fixed the privacy order bug sort() vs rsort()</li>
+  <li>admin/install_poll.php - Incremented version; fixed the missing system email for poll comments; fixed bug with everything being private when upgrading from v2</li>
+  <li>templates/poll.tpl - Fixed secure code for comments; removed comment pagination</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.02</h2>
+<ol>
+  <li>poll.php - Now deletes notifications of poll comments correctly</li>
+  <li>poll_ajax.php - Removed inclusion of json classes because they are now handled in SE304's header.php</li>
+  <li>user_poll_edit.php - Fixed missing language</li>
+  <li>admin/install_poll.php - Incremented version; now forces utf8 charset on related tables and columns</li>
+  <li>include/class_poll.php - Fixed problem with object reference that would incorrectly display poll owner names in browse polls</li>
+  <li>include/js/class_poll.js - Upgraded to use SE304's preliminary Javascript API</li>
+  <li>templates/browse_polls.tpl - Added cleaning and escaping of HTML in descriptions</li>
+  <li>templates/poll.tpl - Fixed radio element error; added support for SE304's comment system and JS API</li>
+  <li>templates/polls.tpl - Fixed radio element error; added support for SE304's JS API</li>
+  <li>templates/user_poll.tpl - Added cleaning and escaping of HTML in descriptions; added support for SE304's JS API</li>
+  <li>templates/user_poll_edit.tpl - Added support for SE304's JS API</li>
+</ol>
+<br />
+<br />
+
+
+
+<h2>Version 3.00alpha/3.01beta</h2>
+<br />
+The upgrade to 3.00alpha/3.01beta involves replacing all of your PHP, TPL, and CSS files. This means that you will lose any changes you have made to these files. Unfortunately there is no easy way to avoid this since we've made so many changes to the platform. If possible, make a note about each change you've made in your current installation so that you can reapply them after the upgrade process. 
+<br />
+<br />
+<br />
+
+
+<h2>Version 2.20</h2>
+<ol>
+  <li>admin/install_poll.php - Incremented version; fixed poll_answers field being too small</li>
+  <li>templates/poll.tpl - Fixed incorrect total vote count</li>
+  <li>templates/polls.tpl - Fixed incorrect total vote count</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.10</h2>
+<ol>
+  <li>poll.php - Added charset specification in the comment AJAX</li>
+  <li>user_poll_edit_comments.php - Added</li>
+  <li>templates/polls.tpl - Fixed Javascript bug in IE</li>
+  <li>templates/user_poll_edit.tpl - Changed user menu links to event plugin's style, added edit comment link</li>
+  <li>templates/user_poll_edit_comments.tpl - Added</li>
+  <li>lang/lang_english_group.php<br />
+    <blockquote>
+    $user_poll_edit[1] = "Poll Details";<br />
+    $user_poll_edit[2] = "Comments";<br />
+    $user_poll_edit[18] = "Back to My Polls";<br />
+    $user_poll_edit_comments[1] = "Poll Details";<br />
+    $user_poll_edit_comments[2] = "Comments";<br />
+    $user_poll_edit_comments[4] = "Photos";<br />
+    $user_poll_edit_comments[5] = "Comments";<br />
+    $user_poll_edit_comments[6] = "poll Style";<br />
+    $user_poll_edit_comments[7] = "Cancel poll";<br />
+    $user_poll_edit_comments[8] = "Back to My Polls";<br />
+    $user_poll_edit_comments[9] = "Poll Comments:";<br />
+    $user_poll_edit_comments[10] = "The comments below have been written about this poll by other people. To delete comments, click their checkboxes and then click the \"Delete Selected\" button below the comment list.";<br />
+    $user_poll_edit_comments[11] = "Last Page";<br />
+    $user_poll_edit_comments[12] = "comment";<br />
+    $user_poll_edit_comments[13] = "of";<br />
+    $user_poll_edit_comments[14] = "comments";<br />
+    $user_poll_edit_comments[15] = "Next Page";<br />
+    $user_poll_edit_comments[16] = "No comments have been posted about this poll.";<br />
+    $user_poll_edit_comments[17] = "Anonymous";<br />
+    $user_poll_edit_comments[18] = "Delete Selected";<br />
+    $user_poll_edit_comments[19] = "\o\\n";  //THESE CHARACTERS ARE BEING ESCAPED BECAUSE THEY ARE BEING USED IN A DATE FUNCTION<br />
+    $user_poll_edit_comments[20] = "select all comments";<br />
+    </blockquote>
+  </li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 2.00</h2>
+This was the initial release of the Polls Plugin.
+
+<br />
+<br />
+
+
+<br>
+©2008 Webligo Developments
+
+</body>
+</html>
+
+
+

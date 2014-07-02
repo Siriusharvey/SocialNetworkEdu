@@ -1,0 +1,103 @@
+
+Upload all files from ProfilePhotoFromAlbum.zip to your SocialEngine root (file content)
+
+1.) Open /include/class_user.php
+
+Find
+
+// DELETE OLD AVATAR IF EXISTS
+$this->user_photo_delete();
+
+Replace with this:
+
+// DELETE OLD AVATAR IF EXISTS
+//$this->user_photo_delete();
+
+
+
+Find
+
+function user_photo($nophoto_image = "", $thumb = FALSE)
+  {
+  global $url;
+    
+    //if( !$user->user_exists || !$this->user_info['user_photo'] )
+    if( !$this->user_info['user_photo'] )
+      return $nophoto_image;
+    
+  $user_photo = $url->url_userdir($this->user_info['user_id']).$this->user_info['user_photo'];
+  if( $thumb )
+    {
+    $user_thumb = substr($user_photo, 0, strrpos($user_photo, "."))."_thumb".substr($user_photo, strrpos($user_photo, "."));
+    if( file_exists($user_thumb) )
+        return $user_thumb;
+  }
+    
+  if( file_exists($user_photo) )
+      return $user_photo;
+    
+  return $nophoto_image;
+}
+
+
+
+
+Replace with this:
+
+function user_photo($nophoto_image = "", $thumb = FALSE)
+  {
+  global $url;
+    
+    //if( !$user->user_exists || !$this->user_info['user_photo'] )
+    if( !$this->user_info['user_photo'] )
+      return $nophoto_image;
+      
+  // CHECK IF OTHER USERS PHOTO KMODS
+  if( stristr($this->user_info['user_photo'], 'upload') )
+  {
+    $user_photo = $this->user_info['user_photo'];
+    if( $thumb )
+        {
+  $user_thumb = substr($user_photo, 1, strrpos($user_photo, "."))."_thumb".substr($user_photo, strrpos($user_photo, "."));
+      if( file_exists($user_thumb) )
+          return $user_thumb;
+    }
+    
+    if( file_exists($user_photo) )
+        return $user_photo;
+    
+    return $nophoto_image;
+  }
+  else
+  {
+    $user_photo = $url->url_userdir($this->user_info['user_id']).$this->user_info['user_photo'];
+    if( $thumb )
+        {
+  $user_thumb = substr($user_photo, 0, strrpos($user_photo, "."))."_thumb".substr($user_photo, strrpos($user_photo, "."));
+      if( file_exists($user_thumb) )
+          return $user_thumb;
+    }
+    
+    if( file_exists($user_photo) )
+        return $user_photo;
+    
+    return $nophoto_image;
+  }
+} 
+
+
+
+2.) Open in your browser yoursite.com/install_profilephotomod.php. When done, delete this file.
+3.) Delete everithing in include/smarty/templates_c .
+4.) Run in SQL Query:
+INSERT INTO `se_languagevars`
+    (`languagevar_id`, `languagevar_language_id`, `languagevar_value`, `languagevar_default`)
+  VALUES 
+    (20000801, 2, 'Set as profile picture', 'album_file, user_album_update, album'),
+    (20000802, 2, 'Your profile picture', 'album_file, user_album_update, album'),
+    (20000803, 2, 'Profile', 'album_file, user_album_update, album'),
+    (20000804, 2, 'In profile', 'album_file, user_album_update, album'),
+    (20000805, 2, 'Choose one of your <a href=\'user_album.php\'> album</a> or someons <a href=\'browse_albums.php\'>other`s</a> album.', 'user_editprofile_photo');
+
+
+This is it :)

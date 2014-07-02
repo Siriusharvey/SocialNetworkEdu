@@ -1,0 +1,288 @@
+
+
+
+
+/* browse_gstores */
+
+select.gstore_small
+{
+	font-size: 8pt;
+	border: 1px solid #AAAAAA;
+}
+
+select.gstore_select
+{
+	border: 1px solid #AAAAAA;
+}
+
+div.gstore_pages_top
+{
+	margin-bottom: 10px; 
+	text-align: center; 
+	padding: 7px 5px 7px 5px; 
+	background: #F3F3F3; 
+	border-top: 1px solid #CCCCCC;
+}
+
+div.gstore_pages_bottom
+{
+	margin-bottom: 10px; 
+	text-align: center; 
+	padding: 7px 5px 7px 5px; 
+	background: #F3F3F3; 
+	border-bottom: 1px solid #CCCCCC;
+}
+
+input.gstore_search
+{
+	border: 1px solid #AAAAAA;
+}
+
+
+
+/* gstore, gstores, user_gstore */
+
+div.segstore
+{
+  width: 600px;
+	background: #F5F5F5;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #CCCCCC;
+}
+
+div.segstore1
+{
+  /* alternate? */
+}
+
+div.segstore2
+{
+  /* alternate? */
+}
+
+td.segstoreLeft
+{
+	vertical-align: top;
+}
+
+td.segstoreRight
+{
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+div.segstorePhoto
+{
+	background: #FFFFFF; 
+	padding: 5px; 
+	border: 1px solid #CCCCCC; 
+	vertical-align: middle; 
+	text-align: center;
+}
+
+div.segstoreTitle
+{
+	font-size: 10pt; 
+	font-weight: bold; 
+	padding: 0px 5px 5px 0px; 
+	border-bottom: 1px solid #CCCCCC; 
+	margin-bottom: 5px;
+}
+
+table.segstoreTitle
+{ 
+	padding: 0px 5px 5px 0px; 
+	border-bottom: 1px solid #CCCCCC; 
+	margin-bottom: 5px;
+}
+
+td.segstoreTitle
+{
+	font-size: 10pt; 
+	font-weight: bold; 
+}
+
+
+.segstoreLargePrice
+{
+	font-size: 10pt; 
+	font-weight: bold; 
+	color:#336600;
+}
+
+div.segstoreStats
+{
+	font-size: 7pt; 
+	color: #777777;
+	font-weight: normal;
+}
+
+div.segstoreBody
+{
+	/* font-size: 7pt; */
+	color: #777777;
+	font-weight: normal;
+}
+
+div.segstoreCategory
+{
+	padding-bottom: 3px; 
+	color: #777777;
+	font-weight: normal;
+}
+
+
+
+/* gstore */
+div.segstoreListing
+{
+	background: #F5F5F5;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #CCCCCC;
+}
+
+td.segstoreListingPhoto
+{
+	padding: 5px 10px 0px 5px;
+}
+
+div.segstoreFields
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #777777;
+	font-weight: normal;
+}
+
+a.segstorePhotoLink:hover img
+{
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.70;
+  opacity: 0.70;
+}
+
+
+
+/* user_gstore */
+
+div.segstoreOptions
+{
+	margin-top: 7px; 
+	border-top: 1px solid #DDDDDD; 
+	padding-top: 7px;
+}
+
+div.segstoreSearch
+{
+  width: 600px;
+  border: 1px solid #AAAAAA;
+  background: #EEEEEE;
+  margin-bottom:8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.sellerSearch
+{
+  border: 1px solid #AAAAAA;
+  background: #EEEEEE;
+  margin-bottom:8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.segstoreOption1
+{
+  float: left;
+}
+
+div.segstoreOption2
+{
+  float: left;
+  padding-left: 15px;
+}
+
+div.gstore_category {
+  padding: 5px 8px 5px 5px; 
+  border: 1px solid #DDDDDD; 
+  border-top: none; 
+  background: #FFFFFF;
+}
+
+div#segstoreNullMessage
+{
+  margin-top: 20px;
+}
+
+/* user_gstore_media */
+
+td.gstore_box
+{
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	padding: 10px;
+}
+
+td.gstore_uploadform
+{
+	padding: 15px;
+	text-align: top;
+}
+
+div.gstore_uploadform_label
+{
+	margin-bottom: 5px; 
+	font-weight: bold;
+}
+
+div.gstore_uploadform
+{
+	border: 1px dashed #CCCCCC;
+	text-align: center;
+	width: 300px;
+	height: 225px;
+}
+
+div.gstore_uploadform_uploading
+{
+	border: 1px dashed #CCCCCC; 
+	text-align: center; 
+	width: 300px; 
+	height: 225px;
+}
+
+
+
+/* profile_gstore */
+div.profile_gstore_page_header {
+	font-size: 15pt;
+	color: #555555;
+	margin-bottom: 5px;
+	font-family: "Trebuchet MS", arial, verdana, serif;
+}
+
+
+div.profile_gstore
+{
+	border-top: 1px solid #DDDDDD;
+	padding: 7px 2px 0px 2px;
+}
+
+div.profile_gstore_date
+{
+	color: #777777;
+	font-size: 7pt;
+}
+
+div.profile_gstore_title
+{
+	font-weight: bold;
+}
+
+div.profile_gstore_body
+{
+	margin: 5px 0px 10px 5px;
+}
+

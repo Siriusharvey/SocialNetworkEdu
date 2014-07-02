@@ -1,0 +1,23 @@
+First you`ll has to register user you wish to be friendly ;) :)
+
+In signup.php:
+
+Find: 
+// UPDATE SIGNUP STATS
+update_stats("signups");
+
+
+Add under:
+$autofriend = new se_user(Array( YOUR USER ID ));
+if( $autofriend ) { $new_user->user_friend_add($autofriend->user_info[user_id], 1, '', '');
+$autofriend->user_friend_add($new_user->user_info[user_id], 1, '', ''); }
+
+
+
+Replace 
+"YOUR USER ID" to the user ID you want to be the friend to everyone. This will just be a number. You can see your  users ID`s at control panel->View Users
+
+At end of all firls codeline has to look like this but with your user id:
+$autofriend = new se_user(Array( 3 ));
+
+That's it!

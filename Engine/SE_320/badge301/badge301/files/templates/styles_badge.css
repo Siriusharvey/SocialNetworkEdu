@@ -1,0 +1,176 @@
+.badge_clear {
+	clear: both;
+	height: 0;
+}
+
+.badge_tooltip .tip {
+  color: #fff;
+  width: 139px;
+  z-index: 13000;
+  background: none;
+  border: none;
+}
+ 
+.badge_tooltip .tip-title {
+  font-weight: normal;
+  font-size: 11px;
+  margin: 0;
+  color: #9FD4FF;
+  padding: 8px 8px 4px;
+  background: url(../images/icons/badge_tooltip_bubble.png) top left;
+}
+ 
+.badge_tooltip .tip-text {
+  font-size: 11px;
+  padding: 4px 8px 8px;
+  background: url(../images/icons/badge_tooltip_bubble.png) bottom right;
+}
+
+.badge_profile_embed .badge_profile_entry {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.badge_profile_side .badge_profile_entry {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.badge_profile_tab .badge_profile_entry {
+  margin: 10px;
+  float: left;
+}
+
+div.badge_browse_photo {
+	border: 1px solid #ccc;
+	padding: 5px;
+  text-align:center;
+  vertical-align:middle;
+  margin-bottom: 10xp;
+}
+
+div.badge_browse_options {
+background:#F2F2F2 none repeat scroll 0 0;
+border:1px solid #BBBBBB;
+font-weight:bold;
+margin:0 0 10px;
+padding:7px 10px;
+}
+
+div.badge_browse_categories {
+	margin-top: 10px; padding: 5px; background: #F2F2F2; border: 1px solid #BBBBBB; margin: 10px 0px 10px 0px; font-weight: bold;
+}
+div.badge_browse_category_item_all {
+	padding: 5px 8px 5px 8px; border: 1px solid #DDDDDD; background: #FFFFFF;
+}
+div.badge_browse_category_item {
+	padding: 5px 8px 5px 8px; border: 1px solid #DDDDDD; border-top: none; background: #FFFFFF;
+}
+div.badgeBrowseEntry {
+	width: 200px;
+	border: 0px solid #ccc;
+	text-align: center;
+	margin: 10px;
+	float: left;
+}
+div.badge_row_title {
+	font-size: 16px;
+	font-weightx: bold;
+}
+div.badge_row_info {
+	font-size: 12px;
+}
+
+
+div.badge_browse_add {
+	border: 1px solid #ccc;
+	background: url(../images/portal_join_bg.gif) repeat-x center 1px;
+	font-size: 14pt;
+	text-align: center;
+	padding: 8px 5px;
+	margin-bottom: 10px;
+}
+
+
+div.seBadge {
+background:#F5F5F5 none repeat scroll 0 0;
+border:1px solid #CCCCCC;
+margin-top:10px;
+padding:10px;
+width:600px;
+}
+td.seBadgeLeft {
+  vertical-align: top;
+}
+td.seBadgeRight {
+  vertical-align: top;
+padding-left:10px;
+}
+div.seBadgePhoto {
+background:#FFFFFF none repeat scroll 0 0;
+border:1px solid #CCCCCC;
+padding:5px;
+text-align:center;
+vertical-align:middle;
+}
+div.seBadgeTitle {
+border-bottom:1px solid #CCCCCC;
+font-size:10pt;
+font-weight:bold;
+margin-bottom:5px;
+padding:0 5px 5px 0;
+}
+div.seBadgeDesc {
+  padding-top: 5px;
+}
+div.seBadgeActions {
+  margin-top: 10px; 
+  border-top: 1px solid #DDDDDD; 
+  padding-top: 5px;
+}
+div.seBadgeAction {
+  float: left; padding-right: 15px;
+}
+div.seBadgeStats
+{
+  font-size: 8pt; 
+  color: #777777;
+  font-weight: normal;
+}
+div.seBadgeDesc {
+	
+}
+div.seBadgePaymentPaid {
+  color: #000;
+  margin-top: 8px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ccc; 
+}
+
+div.seBadgePaymentUnPaid {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid red;  
+}
+
+
+table.badge_badgeassignment_data th {
+  text-align: right;
+  width: 120px;
+  font-size: 14px;
+  padding: 5px;
+}
+table.badge_badgeassignment_data td {
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+}
+
+div.badge_entry_date {
+	color:#777777;
+  font-size:7pt;
+}

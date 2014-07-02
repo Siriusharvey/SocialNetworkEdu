@@ -1,0 +1,197 @@
+﻿<html>
+<!-- $Id: changelog.html 245 2009-11-14 03:25:55Z phil $ -->
+<head>
+<title>SocialEngine Music Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+
+
+
+<h1>SocialEngine Music Plugin Version Changes</h1>
+<p>
+  This file contains a list of each file that was modified in each new version
+  as well as any language variables that were added or changed.
+</p>
+<br />
+
+<h2>Version 3.06</h2>
+<ol>
+  <li>admin/install_music.php - Incremented version</li>
+<li>templates/browse_music.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+<li>templates/styles_music.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+</ol>
+<br />
+
+
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>header_music.php - Added code to utilize hooked template includes; fixed some handling for default skin settings</li>
+  <li>user_music_upload.php - Fixed problem where sessions started by third-party plugins would conflict with and prevent upload (for &lt;=3.07 only); added client-side validation of file extension and size; fixed missing check on max songs</li>
+  <li>admin/install_music.php - Incremented version</li>
+  <li>include/class_music.php - Modified the music_total method to work for count a user's songs</li>
+  <li>templates/admin_levels_musicsettings.tpl - Fixed some handling for default skin settings</li>
+  <li>templates/header_music.tpl - No longer included (provided for backwards compatibility)</li>
+</ol>
+<br />
+
+
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>header_music.php - Added site statistics hook</li>
+  <li>music_ajax.php - Added missing $page variable assignment</li>
+  <li><b>user_music_upload.php - Session compatibility fix for SE 3.10</b>; fixed problem with simple uploader</li>
+  <li>admin/admin_header_music.php - Added site statistics hook</li>
+  <li>admin/install_music.php - Incremented version; new installations will use static language vars for actiontypes, notifytypes, and systememails to ease importing</li>
+  <li>images/music_bar.gif - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_failed.png - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_file.png - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_move.png - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_progress.gif - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_success.png - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_Swiff.Uploader.swf - Removed, moved to main platform as part of the global uploader</li>
+  <li>images/music_uploading.png - Removed, moved to main platform as part of the global uploader</li>
+  <li>include/functions_music.php - Added site statistics generation function; fixed showing of download link when disabled in search function</li>
+  <li>include/js/FancyUpload2.js - Removed, moved to main platform as part of the global uploader</li>
+  <li>include/js/Fx.ProgressBar.js - Removed, moved to main platform as part of the global uploader</li>
+  <li>include/js/music_player.js - Removed, moved to main platform as part of the global uploader</li>
+  <li>include/js/Swiff.Uploader.js - Removed, moved to main platform as part of the global uploader</li>
+  <li>templates/admin_levels_musicsettings.tpl - Made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well)</li>
+</ol>
+<br />
+
+
+
+
+<h2>Version 3.03</h2>
+<ol>
+  <li>user_music_upload.php - Fixed conflict with mod_security and the user_password cookie; removed inclusion of json classes because they are now handled in SE304's header.php</li>
+  <li>admin/install_music.php - Incremented version; now forces utf8 charset on related tables and columns</li>
+  <li>include/js/class_music.js - Upgraded to use SE304's preliminary Javascript API; UI fixes for AJAX music deletion</li>
+  <li>templates/browse_music.tpl - Fixed incorrect profile link</li>
+  <li>templates/profile_music.tpl - Changed username to displayname</li>
+  <li>templates/user_music.tpl - Added support for SE304's JS API; UI fixes for AJAX music deletion</li>
+</ol>
+<br />
+
+
+
+
+<h2>Version 3.00alpha/3.01alpha/3.02beta</h2>
+<p>
+  The upgrade to 3.00alpha/3.01alpha/3.02beta involves replacing all of your PHP,
+  TPL, and CSS files. This means that you will lose any changes you have made to
+  these files. Unfortunately there is no easy way to avoid this since we've made
+  so many changes to the platform. If possible, make a note about each change
+  you've made in your current installation so that you can reapply them after
+  the upgrade process. 
+</p>
+<br />
+
+
+
+
+<h2>Version 2.20</h2>
+<ol>
+  <li>include/class_music.php - Fixed pagination bug on line ~159.</li>
+  <li>user_music_upload.php / user_music_upload.tpl - Removed Basic and Java based file uploader (until bugs can be resolved)</li>
+  <li>user_music_upload.php / user_music_upload.tpl - Added "FancyUpload" AJAX-style file uploader.</li>
+  <li>upload_frame.php / upload_frame.tpl - Created file to handle new AJAX-style file uploader.</li>
+  <li>music_upload.php - Created file to handle files from new AJAX-style file uploader.</li>
+  <li>lang/lang_english_music.php<br />
+  <blockquote>
+  Removed: $user_music_upload[8] to $user_music_upload[12]
+  <br /><br />
+  Added:<br />
+      $music_upload[1] = "Music not enabled for this user";<br />
+      $music_upload[2] = "The file ";<br />
+      $music_upload[3] = " has been uploaded successfully";<br />
+      $music_upload[4] = " was unable to be uploaded, please try again later";<br />
+      $music_upload[5] = "There was an unknown error, please try again later";<br />
+    <br />
+    $upload_frame[1] = "Upload Song";<br />
+    $upload_frame[2] = "Add a song";<br />
+    $upload_frame[3] = "Clear list";<br />
+    $upload_frame[4] = "Overall Progress";<br />
+    $upload_frame[5] = "File Progress";<br />
+    $upload_frame[6] = "Select the song you wish to upload";<br />
+  </blockquote>
+  </li>
+</ol>
+<br />
+
+
+
+
+<h2>Version 2.10</h2>
+<ol>
+  <li>user_music_upload.php - Added basic uploader link.</li>
+  <li>user_music_upload.php - Updated basic uploader to show loading icon when uploading a file.</li>
+  <li>user_music_upload.php - Updated basic uploader to display message when uploading a file.</li>
+  <li>user_music_upload.php - Added loading icon to applet load div.</li>
+  <li>user_music_upload.php - Changed Safari users to Basic Uploader</li>
+  <li>footer_music.php - Fixed bug with music player being displayed when user did not have music.</li>
+  <li>include/class_music.php - Now checks for empty string for song artist/title, and uses filename if found.</li>
+  <li>profile.php - Changed default skin to Basic Playlist</li>
+  <li>lang/lang_english_music.php<br />
+    <blockquote>
+    $user_music_upload[18] = "If the file uploader does not show up after 10-15 seconds, &lt;a href=\"#\" onclick=\"javascript:showBasic(); return false;\"&gt;click here&lt;/a&gt; to use the basic file uploader";<br/>
+    $user_music_upload[19] = "&lt;img src='images/icons/music_working.gif' style='vertical-align:middle'&ht;&nbsp;Please wait while the file upload applet loads";<br/>
+    $user_music_upload[20] = "&nbsp;Your song is uploading, please do not leave this page. You will be notified when it is complete.";<br/>
+    $user_music_upload[21] = "Upload Song";
+    </blockquote>
+  </li>
+</ol>
+
+
+<br />
+(c) 2008 Webligo Developments
+
+
+</body>
+</html>
+
+
+

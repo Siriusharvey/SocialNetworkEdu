@@ -1,0 +1,276 @@
+<html>
+<!-- $Id: changelog.html 293 2010-01-21 01:16:21Z phil $ -->
+<head>
+<title>SocialEngine Album Plugin Version Changes</title>
+<style type='text/css'>
+body, td, div {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+	font-size: 10pt;
+	color: #333333;
+	line-height: 16pt;
+}
+h1 {
+	font-size: 16pt;
+	margin-bottom: 4px;
+}
+h2 {
+	font-size: 12pt;
+	margin-bottom: 4px;
+}
+.box {
+	padding: 10px 13px 10px 13px; 
+	border: 1px dashed #BBBBBB;
+}
+ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+input.text {
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+input.button {
+	background: #EEEEEE;
+	font-weight: bold;
+	padding: 2px;
+	font-family: "Trebuchet MS", tahoma, verdana, arial, serif;
+}
+form {
+	margin: 0px;
+}
+a:link { color: #2078C8; text-decoration: none; }
+a:visited { color: #2078C8; text-decoration: none; }
+a:hover { color: #3FA4FF; text-decoration: underline; }
+</style>
+</head>
+<body>
+
+
+<h1>SocialEngine Album Plugin Version Changes</h1>
+This file contains a list of each file that was modified in each new version as well 
+as any language variables that were added or changed.
+<br />
+<br />
+
+<h2>Version 3.07</h2>
+<ol>
+	<li>admin/install_album.php - Incremented version</li>
+	<li>include/class_album.php - fixed bug with altering title/description of photos</li>
+	<li>templates/user_album_update.tpl - fixed bug with altering title/description of photos</li>
+	<li>user_album.php - fixed bug with photo deletion</li>
+	<li>user_album_update.php - fixed bug with altering title/description of photos</li>
+</ol>
+<br />
+<br />
+
+<h2>Version 3.06</h2>
+<ol>
+  <li>album_ajax.php - Added</li>
+  <li>header_album.php - Added code to utilize hooked template includes</li>
+  <li>user_album.php - Fixed security vulnerability</li>
+  <li>user_album_edit.php - Fixed minor security vulnerability</li>
+  <li>user_album_settings.php - Fixed minor security vulnerability</li>
+  <li>user_album_update.php - Moved ajax functions</li>
+  <li>user_album_upload.php - Fixed problem where sessions started by third-party plugins would conflict with and prevent upload (for &lt;=3.07 only); action media path and link will now use relative URL; added client-side validation of file extension and size</li>
+  <li>admin/install_album.php - Incremented version</li>
+  <li>include/class_album.php - Fixed possible minor security issue in album_media_delete(); fixed problems with cached totals and covers when moving media between albums</li>
+  <li>include/js/class_album.js - Added</li>
+  <li>templates/album_file.tpl - Fixed reporting bug; Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/browse_albums.tpl - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/header_album.tpl - No longer included (provided for backwards compatibility)</li>
+  <li>templates/styles_album.css - Changed pt font definition to px to ensure Windows DPI does not affect layout</li>
+  <li>templates/user_album.tpl - Fixed security vulnerability; added ajax functions</li>
+  <li>templates/user_album_update.tpl - Added ajax functions</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.05</h2>
+<ol>
+  <li>browse_albums.php - Fixed support for "Public Permission Defaults"</li>
+  <li>header_album.php - Fixed support for "Public Permission Defaults"; added site statistics hook</li>
+  <li><b>user_album_upload.php - Session compatibility fix for SE 3.10</b></li>
+  <li>admin/admin_header_album.php - Added site statistics hook</li>
+  <li>admin/admin_levels_albumsettings.php - Fixed bug in privacy handling that would update users in other levels; fixed checking no privacy options, will now replace it with only the most public</li>
+  <li>admin/install_album.php - Incremented version; added se_albums.album_totalfiles, se_albums.album_totalspace, and se_media.media_totalcomments columns for speed; new installations will use static language vars for actiontypes, notifytypes, and systememails to ease importing</li>
+  <li>include/class_album.php - Added handling for the new se_albums.album_totalfiles, se_albums.album_totalspace, and se_media.media_totalcomments columns</li>
+  <li>include/functions_album.php - Added site statistics generation function; fixed possible problem with the tag search generation</li>
+  <li>templates/admin_levels_albumsettings.tpl - Made plugin loop in menu fully compatible with 3.10 (is backwards compatible with all v3 as well)</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.04</h2>
+<ol>
+  <li>user_album_upload.php - Fixed bug in getting photo size</li>
+  <li>admin/install_album.php - Incremented version; now ensures utf8/utf8_unicode_ci on all database text columns</li>
+  <li>templates/album_file.tpl - Fixed IE bug; fixed left/right icon sources</li>
+</ol>
+<br />
+<br />
+
+
+<h2>Version 3.03beta</h2>
+<ol>
+  <li>album.php - Removed code to display photos of a user.</li>
+  <li>album_file.php - Removed code to display photos of a user.</li>
+  <li>header_album.php - Added a hook, removed some code.</li>
+  <li>user_album_upload.php - Fixed problem with overwritten session vars.</li>
+  <li>admin/admin_viewalbums.php - Searching by first/last name now works, and displayname is shown.</li>
+  <li>include/functions_album.php - Added hooked function.</li>
+  <li>templates/admin_viewalbums.tpl - Searching by first/last name now works, and displayname is shown.</li>
+  <li>templates/album.tpl - Removed code to display photos of a user.</li>
+  <li>templates/album_file.tpl - Removed code to display photos of a user, now utilizing comment/tag JS classes.</li>
+  <li>templates/header_album.tpl - Took out tagging javascript.</li>
+  <li>templates/styles_album.css - Changed classes.</li>
+</ol>
+<br />
+<br />
+
+<h2>Version 3.00alpha/3.01alpha/3.02beta</h2>
+<br>
+The upgrade to 3.02beta involves replacing all of your PHP, TPL, and CSS files. This means that you will lose any changes you have made to these files. Unfortunately there is no easy way to avoid this since we've made so many changes to the platform. If possible, make a note about each change you've made in your current installation so that you can reapply them after the upgrade process. 
+
+<br><br><br>
+
+<h2>Version 2.50</h2>
+
+<ol>
+<li>functions_album.php - Fixed issue with certain images not being returned in results.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.40</h2>
+
+<ol>
+<li>album.php - Fixed privacy error message bug.</li>
+<li>album_file.php - Fixed privacy error message bug.</li>
+<li>header_album.php - Fixed minor security bug.</li>
+<li>user_album.php - Fixed bug when admin allows "unlimited" space.</li>
+<li>user_album_upload.php - Fixed bug when admin allows "unlimited" space.</li>
+<li>admin/admin_header_album.php - Fixed minor security bug.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.30</h2>
+
+<ol>
+<li>templates/admin_levels_albumsettings.tpl - Fixed missing header for "Allow Custom CSS Styles?".</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.20</h2>
+
+<ol>
+<li>templates/albums.tpl - Fixed problem with last update date when album hasn't been updated.</li>
+<li>templates/user_album.tpl - Fixed problem with last update date when album hasn't been updated.</li>
+<li>templates/user_album_friends.tpl - Fixed problem with last update date when album hasn't been updated.</li>
+<li>include/class_album.php - Albums of unconfirmed friends no longer display on the "My Friends' Albums" page.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.10</h2>
+
+<ol>
+<li>album.php - Fixed privacy bug, error page language variable bug.</li>
+<li>album_file.php - Fixed privacy/comment bug.</li>
+<li>user_album_comments.php - Fixed redirection bug when album_id was incorrectly specified.</li>
+<li>user_album_edit.php - Fixed redirection bug when album_id was incorrectly specified.</li>
+<li>user_album_update.php - Fixed redirection bug when album_id was incorrectly specified.</li>
+<li>user_album_upload.php - Fixed redirection bug when album_id was incorrectly specified.</li>
+<li>templates/album.tpl - Fixed issue with multiple album pages.</li>
+<li>templates/album_file.tpl - Posting comments didn't work when comment security code was turned off.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 2.00</h2>
+<br>
+The upgrade to 2.00 involves replacing all of your PHP, TPL, and CSS files. This means that you will lose any changes you have made to these files. Unfortunately there is no easy way to avoid this since we've made so many changes to the platform. If possible, make a note about each change you've made in your current installation so that you can reapply them after the upgrade process. 
+
+<br><br><br>
+
+<h2>Version 1.40</h2>
+
+<ol>
+<li>user_albums_add.php - Album titles and descriptions now censor banned words.</li>
+<li>user_albums_edit.php - Album titles and descriptions now censor banned words.</li>
+<li>user_albums_update.php - Photo titles and descriptions now censor banned words.</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.30</h2>
+
+<ol>
+<li>album.php - Added pagination to photo albums.</li>
+<li>user_albums_add.php - Now user's last update date is updated when albums are created.</li>
+<li>user_albums_edit.php - Now user's last update date is updated when albums are edited, and line breaks in album description work.</li>
+<li>user_albums_update.php - Now user's last update date is updated when photos are edited, media comments are properly deleted, and line breaks in media descriptions work.</li>
+<li>user_albums_upload.php - Now user's last update date is updated when photos are uploaded.</li>
+<li>templates/album.tpl - Added pagination to photo albums.</li>
+<li>templates/album_file.tpl - Fixed photo dimension problem.</li>
+<li>templates/user_albums_comments.tpl - Fixed photo dimension problem.</li>
+<li>templates/user_albums_friends.tpl - Added language translation.</li>
+<li>templates/admin_viewalbums.tpl - Allowed admin to view private albums as if logged in as user.</li>
+<li>admin/admin_viewalbums.php - Allowed admin to view private albums as if logged in as user.</li>
+<li>lang/lang_english_album.php<br>
+<blockquote>
+$album[9] = "Last Page";<br>
+$album[10] = "viewing photo";<br>
+$album[11] = "of";<br>
+$album[12] = "viewing photos";<br>
+$album[13] = "Next Page";<br>
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.20</h2>
+
+<ol>
+<li>album.php</li>
+<li>album_file.php</li>
+<li>albums.php</li>
+<li>templates/album_file.tpl</li>
+<li>lang/lang_english_album.php<br>
+<blockquote>
+$album[8] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$album_file[18] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";<br>
+$albums[7] = "You must be logged in to view this page. &lt;a href='login.php'&gt;Click here&lt;/a&gt; to login.";
+</blockquote>
+</li>
+</ol>
+
+<br><br>
+
+<h2>Version 1.10</h2>
+
+<ol>
+<li>user_albums_delete.php</li>
+<li>templates/user_albums_upload.tpl</li>
+<li>lang/lang_english_album.php<br>
+<blockquote>
+$user_albums_upload[9] = "You have";<br>
+$user_albums_upload[17] = "MB of free space remaining.&lt;br&gt;You may upload files of the following types:";<br>
+$user_albums_upload[18] = "&lt;br&gt;You may upload files with sizes up to";<br>
+$user_albums_upload[19] = "KB.";
+</blockquote>
+</li>
+</ol>
+
+
+<br>
+©2007 Webligo Developments
+
+</body>
+</html>
+
+
+
